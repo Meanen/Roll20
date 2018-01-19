@@ -10,9 +10,19 @@ API:
 Typing only !move will open the options.
 
 arg uses:
+
 ON: Will activate automatic transfer of players when token is created.
+
 OFF: Will deactivate automatic transfer of players when token is created.
-HERE: Will move players owning your selected tokens to your current page.
-HOME: Moves all players to the default page.
+
+ALLHERE: Will default map to your current page.
+
+HERE: Will move selected players to your current page.
+
+ALLHOME: Moves all players to the default page.
+
+HOME: Moves selected players to the default page.
+
 OFFLINE ON: Moving tokens will only transfer online players.
+
 OFFLINE OFF: Moving tokens will transfer both online and offline players.
