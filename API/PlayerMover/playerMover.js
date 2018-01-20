@@ -24,10 +24,10 @@ var PlayerMover = PlayerMover || (function() {
 
             const character = getObj('character', representedBy);
             const players = character.get('controlledby').split(',');
-            
+
             if (players === undefined || players.length === 0) return;
             if (players[0] === '' || players.indexOf('all') >= 0) return;
-            
+
             var pp = Campaign().get('playerspecificpages');
             Campaign().set({playerspecificpages: false}); // Force pp update
             pp = (_.isObject(pp) ? pp : {});
@@ -47,12 +47,12 @@ var PlayerMover = PlayerMover || (function() {
             const prevState = state.mover.isOn
             state.mover.isOn = true;
             state.mover.ignore = true;
-            
+
             _.map(selection, (selected) => {
                 const token = getObj('graphic', selected._id);
                 handleMove(token);
             });
-            
+
             state.mover.ignore = false;
             state.mover.isOn = state.mover.isOn;
         },
@@ -122,25 +122,23 @@ var PlayerMover = PlayerMover || (function() {
                 break;
             case 'OFFLINE':
                 if (arg === undefined) return messenger(msg.who, 'This will ignore if players are offline<br> Use !MOVE OFFLINE on|off|toggle');
-                (() => {
-                    switch (arg) {
-                    case 'ON':
-                        state.mover.ignore = true;
-                        break;
-                    case 'OFF':
-                        state.mover.ignore = false;
-                        break;
-                    case 'TOGGLE':
-                        state.mover.ignore = !state.mover.ignore;
-                        break;
-                    default:
-                        messenger(msg.who, 'This will ignore if players are offline<br>' + 'Use !move offline on|off|toggle');
-                        break;
-                    }
-                    messenger(msg.who, 'Ignore online requirement is ' + boolToStr(state.mover.ignore));
-                })();
+				switch (arg) {
+				case 'ON':
+					state.mover.ignore = true;
+					break;
+				case 'OFF':
+					state.mover.ignore = false;
+					break;
+				case 'TOGGLE':
+					state.mover.ignore = !state.mover.ignore;
+					break;
+				default:
+					messenger(msg.who, 'This will ignore if players are offline<br>' + 'Use !move offline on|off|toggle');
+					break;
+				}
+				messenger(msg.who, 'Ignore online requirement is ' + boolToStr(state.mover.ignore));
                 break;
-            case 'RESET':                    
+            case 'RESET':
                 state.mover.ignore = false;
                 state.mover.isOn = true;
                 messenger(msg.who, 'PlayerMover is now RESET!');
