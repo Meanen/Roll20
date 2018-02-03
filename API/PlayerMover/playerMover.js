@@ -24,15 +24,14 @@ var PlayerMover = PlayerMover || (function() {
 
         var pp = Campaign().get('playerspecificpages');
         Campaign().set({playerspecificpages: false}); // Force pp update
-        pp = (_.isObject(pp) ? pp : {});
+        pp = _.isObject(pp) ? pp : {};
 
         players.map((pid) => {
             if (!getObj('player', pid).get('_online') && !state.mover.ignore) return;
 
             pp[pid] = obj.get('_pageid');
             const page = getObj('page', obj.get('_pageid'));
-            const message = character.get('name') + ' moved to ' + page.get('name');
-            messenger('gm', message);
+            messenger('gm', `${character.get('name')} moved to ${page.get('name')}`);
         });
         Campaign().set({playerspecificpages: pp});
     },
@@ -46,6 +45,7 @@ var PlayerMover = PlayerMover || (function() {
             const token = getObj('graphic', selected._id);
             handleMove(token);
         });
+        messenger('gm', `Moved ${selection.length} players`);
         state.mover.ignore = prevIgnoreState;
         state.mover.isOn = prevOnState;
     },
@@ -61,28 +61,20 @@ var PlayerMover = PlayerMover || (function() {
             });
         });
         if (isEmpty(pp)) return;
-        Campaign().set('playerspecificpages', false);
-        Campaign().set('playerspecificpages', pp);
+        Campaign().set({playerspecificpages: pp});
     },
     handleInput = (msg) => {
-        var msgFormula = msg.content.split(/\s+/);
-        var command = msgFormula[0].toUpperCase();
-        if (!playerIsGM(msg.playerid) ||
-                msg.type != 'api' ||
-                command.indexOf('!MOVE') === -1) {
-            return;
-        }
+        var msgFormula = msg.content.toUpperCase().split(/\s+/);
+        var command = msgFormula[0];
+        if (!playerIsGM(msg.playerid) || msg.type != 'api' || command.indexOf('!MOVE') === -1) return;
 
         const option = msgFormula[1];
-        if (isEmpty(option)) {
-            menu(msg.who);
-            return;
-        }
+        if (isEmpty(option)) return menu(msg.who);
 
         const selected = msg.selected;
         const homePage = getObj('page', Campaign().get('playerpageid'));
-        const arg = msgFormula[2]?msgFormula[2].toUpperCase():undefined;
-        switch(msgFormula[1].toUpperCase()) {
+        const arg = msgFormula[2];
+        switch(option) {
         case 'ON':
             state.mover.isOn = true;
             messenger(msg.who, 'PlayerMover is now ON');
@@ -93,14 +85,14 @@ var PlayerMover = PlayerMover || (function() {
             break;
         case 'TOGGLE':
             state.mover.isOn = !state.mover.isOn;
-            messenger(msg.who, 'PlayerMover is now ' + boolToStr(state.mover.isOn));
+            messenger(msg.who, `PlayerMover is now ${boolToStr(state.mover.isOn)}`);
             break;
         case 'ALLHERE':
             const pageId = getObj('player', msg.playerid).get('_lastpage');
             const page = getObj('page', pageId);
             Campaign().set({playerpageid: pageId});
             Campaign().set({playerspecificpages: false});
-            messenger(msg.who, 'ALL players are now on ' + page.get('name'));
+            messenger(msg.who, `ALL players are now on ${page.get('name')}`);
             break;
         case 'HERE':
             if (!selected) return messenger(msg.who, 'Select at least 1 token or use !move ALLHERE');
@@ -108,15 +100,15 @@ var PlayerMover = PlayerMover || (function() {
             break;
         case 'ALLHOME':
             Campaign().set({playerspecificpages: false});
-            messenger(msg.who, 'ALL players are now on ' + homePage.get('name'));
+            messenger(msg.who, `ALL players are now on ${homePage.get('name')}`);
             break;
         case 'HOME':
             if (!selected) return messenger(msg.who, 'Select at least 1 token or ALLHOME');
             moveSelectedHome(selected);
-            messenger(msg.who, 'Moved ' + selected.length + ' to ' + homePage.get('name'));
+            messenger(msg.who, `Moved ${selected.length} players to ${homePage.get('name')}`);
             break;
         case 'OFFLINE':
-            if (arg === undefined) return messenger(msg.who, 'This will ignore if players are offline<br> Use !MOVE OFFLINE on|off|toggle');
+            if (isEmpty(arg)) return messenger(msg.who, 'This will ignore if players are offline when moving tokens<br>Use !MOVE OFFLINE on|off|toggle');
             switch (arg) {
             case 'ON':
                 state.mover.ignore = true;
@@ -128,10 +120,10 @@ var PlayerMover = PlayerMover || (function() {
                 state.mover.ignore = !state.mover.ignore;
                 break;
             default:
-                messenger(msg.who, 'This will ignore if players are offline<br>' + 'Use !move offline on|off|toggle');
+                messenger(msg.who, 'This will ignore if players are offline<br> Use !move offline on|off|toggle');
                 break;
             }
-            messenger(msg.who, 'Ignore online requirement is ' + boolToStr(state.mover.ignore));
+            messenger(msg.who, `Ignore online requirement is ${boolToStr(state.mover.ignore)}`);
             break;
         case 'RESET':
             state.mover.ignore = false;
@@ -144,27 +136,20 @@ var PlayerMover = PlayerMover || (function() {
         }
     },
     // Helper methods
-    messenger = (who, msg) => sendChat('PlayerMover', '/w ' + who + ' &{template:5e-shaped}{{ ' + msg + ' }}', null, {noarchive:true}),
+    messenger = (who, msg) => sendChat('PlayerMover', `/w ${who} &{template:5e-shaped}{{ ${msg} }}`, null, {noarchive:true}),
     boolToStr = (bool) => (bool?'ON':'OFF'),
-    isEmpty = (obj) => {
-        if (obj === undefined ||
+    isEmpty = (obj) => (obj === undefined ||
                 obj === [] ||
                 obj === '' ||
-                (obj.constructor === Object && Object.keys(obj).length === 0)) {
-            return true;
-        } return false;
-    },
-    menu = (who) => {
-        var message = 'PlayerMover is [' + boolToStr(state.mover.isOn) + '](!MOVE toggle)<br>'
-                + 'Ignore online requirement is [' + boolToStr(state.mover.ignore) + '](!MOVE offline toggle)<br>'
-                + '-----<br>'
+                (_.isObject(obj) && Object.keys(obj).length === 0)),
+    menu = (who) => (messenger(who, `PlayerMover is [${ boolToStr(state.mover.isOn)}](!MOVE toggle)<br>`
+                + `Ignore online requirement is [${boolToStr(state.mover.ignore)}](!MOVE offline toggle)<br>`
+                + '---------<br>'
                 + '[Move SELECTED players HERE](!MOVE here)<br>'
                 + '[Move ALL players HERE](!MOVE allhere)<br>'
-                + '-----<br>'
+                + '---------<br>'
                 + '[Move SELECTED players HOME](!MOVE home)<br>'
-                + '[Move ALL players HOME](!MOVE allhome)';
-        messenger(who, message);
-    },
+                + '[Move ALL players HOME](!MOVE allhome)')),
     registerEventHandlers = function() {
         // To handle copy/paste and drag&drop we need 2 triggers
         on('add:token', handleMove);
@@ -176,7 +161,7 @@ var PlayerMover = PlayerMover || (function() {
         RegisterEventHandlers: registerEventHandlers
     };
 }());
-//On Ready
+// On Ready
 on('ready', function() {
     'use strict';
     PlayerMover.RegisterEventHandlers();
