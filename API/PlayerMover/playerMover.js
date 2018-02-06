@@ -4,15 +4,16 @@
 //Roll20 Contact: 
 var PlayerMover = PlayerMover || (function() {
     'use strict';
-    const version = '0.1.0.0',
+    const version = '0.1.0.1',
     schemaVersion = '0.1.0.0',
     notifyObservers = (event) => {
         _.each(observers[event], (handler) => {
             handler();
         });
     },
+    whatMessages = ['What', 'Hva', 'Qué', 'Mitä', 'Was', 'Nani', 'No'],
     handleMove = (obj) => {
-        if (!state.mover.isOn ||  obj.get('layer') != 'objects'|| isEmpty(obj)) return;
+        if (!state.mover.isOn ||  obj.get('layer') !== 'objects'|| isEmpty(obj)) return;
 
         const representedBy = obj.get('represents');
         if (isEmpty(representedBy)) return;
@@ -50,7 +51,7 @@ var PlayerMover = PlayerMover || (function() {
         state.mover.isOn = prevOnState;
     },
     moveSelectedHome = (selection) => {
-        var pp = Campaign().get('playerspecificpages');
+        const pp = Campaign().get('playerspecificpages');
         Campaign().set({playerspecificpages: false}); // Force pp update
         _.map(selection, (selected) => {
             const token = getObj('graphic', selected._id);
@@ -64,9 +65,9 @@ var PlayerMover = PlayerMover || (function() {
         Campaign().set({playerspecificpages: pp});
     },
     handleInput = (msg) => {
-        var msgFormula = msg.content.toUpperCase().split(/\s+/);
-        var command = msgFormula[0];
-        if (!playerIsGM(msg.playerid) || msg.type != 'api' || command.indexOf('!MOVE') === -1) return;
+        const msgFormula = msg.content.toUpperCase().split(/\s+/);
+        const command = msgFormula[0];
+        if (!playerIsGM(msg.playerid) || msg.type !== 'api' || command.indexOf('!MOVE') === -1) return;
 
         const option = msgFormula[1];
         if (isEmpty(option)) return menu(msg.who);
@@ -131,7 +132,7 @@ var PlayerMover = PlayerMover || (function() {
             messenger(msg.who, 'PlayerMover is now RESET!');
             break;
         default:
-            messenger(msg.who, 'What?');
+            messenger(msg.who, `${_.sample(whatMessages)}?`);
             return;
         }
     },
@@ -139,8 +140,7 @@ var PlayerMover = PlayerMover || (function() {
     messenger = (who, msg) => sendChat('PlayerMover', `/w ${who} &{template:5e-shaped}{{ ${msg} }}`, null, {noarchive:true}),
     boolToStr = (bool) => (bool?'ON':'OFF'),
     isEmpty = (obj) => (obj === undefined ||
-                obj === [] ||
-                obj === '' ||
+                obj === [] || obj === '' || obj === null ||
                 (_.isObject(obj) && Object.keys(obj).length === 0)),
     menu = (who) => (messenger(who, `PlayerMover is [${ boolToStr(state.mover.isOn)}](!MOVE toggle)<br>`
                 + `Ignore online requirement is [${boolToStr(state.mover.ignore)}](!MOVE offline toggle)<br>`
