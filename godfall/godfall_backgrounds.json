@@ -1,0 +1,581 @@
+{
+  "background": [
+    {
+      "entries": [
+        {
+          "type": "list",
+          "style": "list-hang-notitle",
+          "items": [
+            {
+              "type": "item",
+              "name": "Skill Proficiencies",
+              "entry": "{@skill Medicine} and your choice of {@skill Nature} or {@skill Survival}"
+            },
+            {
+              "type": "item",
+              "name": "Tool Proficiencies",
+              "entry": "{@item Herbalism kit|phb}."
+            },
+            {
+              "type": "item",
+              "name": "Languages",
+              "entry": "One of your choice."
+            }
+          ]
+        },
+        {
+          "name": "Overview",
+          "type": "entries",
+          "entries": [
+            "You are trained in the harvest and preparation of herbs and reagents to create potions and salves used to cure wounds and basic ailments, and to neutralize poisons. Maybe you attended one of the Greenhands\u2019 training programs at the university, or perhaps you completed an apprenticeship under a master apothecary. Did you procture your herbs from the city\u2019s terraced farms and greenhouses, or did you travel with a scavenging crew to gather outside Solace\u2019s walls? In any case, you"
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Feature: Medical Professional",
+          "entries": [
+            "You have a reputation as a healer of the sick, and are often called upon by those who are diseased or injured. You can usually gain an audience with anyone who needs treatment \u2014 even if protocol would normally prevent you from doing so \u2014 simply by agreeing to offer your assistance. By spending a few moments examining a chemical \u2014 a vial of liquid, a packet of ground powder, or the like \u2014 you can determine whether the substance is intended to harm or heal (or neither). This examination does not reveal any specific information about the substance(such as that a powder is actually an inhaled poison, or that it paralyzes its victim), only that it is either harmful or helpful to those that it is used on."
+          ],
+          "data": {
+            "isFeature": true
+          }
+        },
+        {
+          "type": "item",
+          "name": "Equipment",
+          "entry": " An {@item herbalism kit|phb}, four empty vials, scroll case stuffed full of your notes, a sack, common clothes, and a belt pouch containing 10 gp."
+        }
+      ],
+      "name": "Apothecary",
+      "source": "Godfall",
+      "skillProficiencies": [
+        {
+          "Medicine": true,
+          "choose": {
+            "from": [
+              "Nature",
+              "Survival"
+            ]
+          }
+        }
+      ],
+      "languageProficiencies": [
+        {
+          "any": 1
+        }
+      ]
+    },
+    {
+      "entries": [
+        {
+          "type": "list",
+          "style": "list-hang-notitle",
+          "items": [
+            {
+              "type": "item",
+              "name": "Skill Proficiencies",
+              "entry": "{@skill Insight}, {@skill Medicine}."
+            },
+            {
+              "type": "item",
+              "name": "Tool Proficiencies",
+              "entry": "{@item Herbalism kit|phb}."
+            },
+            {
+              "type": "item",
+              "name": "Languages",
+              "entry": "One of your choice"
+            }
+          ]
+        },
+        {
+          "name": "Overview",
+          "type": "entries",
+          "entries": [
+            "You are a trained physician. You probably started out as a simple barber surgeon but you\u2019ve had proper training since then. Maybe you attended one of the Greenhands\u2019 training programs at the university, or perhaps you completed an apprenticeship under a master physician. Either way, you know more about the mysteries of the humanoid body than those around you. You can identify wounds and have a strong grasp of the materials and methods needed to attend to them."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Feature: Doctor\u2019s kit.",
+          "entries": [
+            "Amid the city\u2019s rationing, you\u2019ve learned to make the most of your healer\u2019s kit. Instead of 10 uses, you can get 20 uses out of a healer\u2019s kit. Another creature who lacks this feature and uses a kit of yours consumes 2 uses of it."
+          ],
+          "data": {
+            "isFeature": true
+          }
+        },
+        {
+          "type": "item",
+          "name": "Equipment",
+          "entry": " A {@item healer's kit|phb}, {@item herbalism kit|phb}, scroll case stuffed full of notes and anatomical diagrams, small set of sharp surgical blades in leather wrappings, common clothes, and a belt pouch containing 10 gp."
+        }
+      ],
+      "name": "Chirurgeon",
+      "source": "Godfall",
+      "skillProficiencies": [
+        {
+          "Insight": true,
+          "Medicine.": true
+        }
+      ],
+      "languageProficiencies": [
+        {
+          "any": 1
+        }
+      ]
+    },
+    {
+      "entries": [
+        {
+          "type": "list",
+          "style": "list-hang-notitle",
+          "items": [
+            {
+              "type": "item",
+              "name": "Skill Proficiencies",
+              "entry": "{@skill Animal Handling}, {@skill Nature}"
+            },
+            {
+              "type": "item",
+              "name": "Tool Proficiencies",
+              "entry": " Vehicles (land), your choice of {@item cook's utensils|phb} or {@item brewer's|phb} supplies"
+            }
+          ]
+        },
+        {
+          "name": "Overview",
+          "type": "entries",
+          "entries": [
+            "You have spent much of your life working with the Greenhands to produce food for the city, either tending crops or livestock or both. Are you from one of the wealthy families that owns terraced farmland sloping down from the city\u2019s walls, or greenhouses on the upper levels where plants can get sunlight? Or did you labor as a simple farmhand? In either case, you are accustomed to long days of hard work. If you were of one of the wealthy farming families, however, you also enjoyed the privileges of your station, including frequent meals made with real food rather than bland but filling conjured foodstuffs."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Feature: Farmer's Almanac",
+          "entries": [
+            "Thanks to a lifetime growing food in every imaginable condition, you are able to provide simple information and goods for your companions. You can accurately predict the weather in a maelstrom free area for the next week. You know what food is really worth, and you can often haggle a better price for produce."
+          ],
+          "data": {
+            "isFeature": true
+          }
+        },
+        {
+          "type": "item",
+          "name": "Equipment",
+          "entry": " One set of tools you are proficient with, a farm implement (such as a pitchfork or shovel), common clothes, a wide-brimmed hat, a sack containing 5 gp worth of trade goods (see PHB Equipment chapter), and a belt pouch containing 10 gp."
+        }
+      ],
+      "name": "Farmer",
+      "source": "Godfall",
+      "skillProficiencies": [
+        {
+          "AnimalHandling": true,
+          "Nature": true
+        }
+      ]
+    },
+    {
+      "entries": [
+        {
+          "type": "list",
+          "style": "list-hang-notitle",
+          "items": [
+            {
+              "type": "item",
+              "name": "Skill Proficiencies",
+              "entry": "Choose any two from {@skill Athletics}, {@skill Deception}, {@skill Insight}, {@skill Perception} and {@skill Survival}."
+            },
+            {
+              "type": "item",
+              "name": "Tool Proficiencies",
+              "entry": "Your choice of one artisan’s tools related to the kind of work you did in Solace as part of your geas."
+            },
+            {
+              "type": "item",
+              "name": "Languages",
+              "entry": "One of your choice"
+            }
+          ]
+        },
+        {
+          "name": "Overview",
+          "type": "entries",
+          "entries": [
+            "Convicted of a crime in Solace, you have been sentenced to dedicate a year of your life to bettering the city and improving the lives of its citizens. This punishment was imposed through the geas spell, and may have initially taken the form of either manual or martial labor, depending on your character’s talents, skills, and experience. Were you assigned to a batallion along the outer walls, defending the city from Maelstrom-born horrors alongside the Wardens? Or did you work as part of a clean-up crew duty in the Dead Ward, rebuild damaged city buildings, or some other type of duties? At this point, you’ve been reassigned to finish out the rest of your sentence in the frontier as a conscript adventurer. Was this something you had to fight for, or yet another unwanted burden imposed by city officials? What was your crime? And how much time is left on your geas? What are your plans for when your life is your own again?"
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Feature: The Invisible Ones",
+          "entries": [
+            "You are familiar with how the dirty parts of Solace's city infrastructure works, and as soon as people notice the bracelet on your arm, that's all they really see. As a result, you can easily gain access to the city's low- to mid-level-security military fortifications, as well as sites where city work crews are common, such as the Dead Ward and various government facilities. What's more, other geas'd conscripts are inclined to commiserate. If you spend at least 10 minutes in friendly conversation with a geas'd conscript NPC, they tend to be inclined to help you out, though not necessarily to stick their own neck out for you."
+          ],
+          "data": {
+            "isFeature": true
+          }
+        },
+        {
+          "type": "item",
+          "name": "Equipment",
+          "entry": " One set of tools you're proficient in, a 10-foot pole, an official writ detailing your sentence, a metal bracelet identifying you as a geas\u2019d conscript that cannot be removed until the end of your sentence, common clothes, pouch, 5 gp."
+        }
+      ],
+      "name": "Geas'd Conscript",
+      "source": "Godfall",
+      "skillProficiencies": [
+        {
+          "choose": {
+            "from": [
+              "Athletics",
+              "Insight",
+              "Perception",
+              "Survival",
+              "Deception"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "entries": [
+        {
+          "type": "list",
+          "style": "list-hang-notitle",
+          "items": [
+            {
+              "type": "item",
+              "name": "Skill Proficiencies",
+              "entry": "{@skill Deception}, {@skill Religion}"
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "Languages",
+          "entry": "Two of your choice"
+        },
+        {
+          "name": "Overview",
+          "type": "entries",
+          "entries": [
+            "Once an acolyte or a priest, you came to believe in a doctrine considered heresy by others of your faith, taught to you in secret by other heretics or perhaps born of some other personal experience. Have you kept your beliefs a secret, or are others aware of them? And if so, did you choose to divulge this information or were you found out somehow? If others know of your heretical beliefs, you have likely been excommunicated from your temple. Whatever your story\u2019s origins, once others learn of your blasphemy, you are shunned by the faithful."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Feature: Heretical Contact",
+          "entries": [
+            "You know where to find heretics in Solace, as well as in any future settlements where your faith is represented. If no heretics are present, you can indoctrinate weak-willed souls if you spend 8 hours preaching in-game (you may not spend CP for this purpose). Where heretics are present, you can always find a place to hide, rest and recuperate. If needed, they can help you escape the settlement on a cart or through a secret tunnel."
+          ],
+          "data": {
+            "isFeature": true
+          }
+        },
+        {
+          "type": "item",
+          "name": "Equipment",
+          "entry": "A {@item holy symbol|phb} (subtly modified to represent your own heretical belief), a prayer book or prayer wheel, vestments, a bottle of invisible ink, a quill, a set of common clothes, and a pouch containing 10 gp."
+        }
+      ],
+      "name": "Heretic",
+      "source": "Godfall",
+      "skillProficiencies": [
+        {
+          "Deception": true,
+          "Religion": true
+        }
+      ]
+    },
+    {
+      "entries": [
+        {
+          "type": "list",
+          "style": "list-hang-notitle",
+          "items": [
+            {
+              "type": "item",
+              "name": "Skill Proficiencies",
+              "entry": "{@skill Arcana} and your choice of {@skill Perception} or {@skill Performance}"
+            },
+            {
+              "type": "item",
+              "name": "Tool Proficiencies",
+              "entry": "One tool set or kit of your choice."
+            },
+            {
+              "type": "item",
+              "name": "Languages",
+              "entry": "One of your choice."
+            }
+          ]
+        },
+        {
+          "name": "Overview",
+          "type": "entries",
+          "entries": [
+            "In Solace, magic is a tool that\u2019s incorporated into many jobs. There are entirely magical careers, such as the medium or oracle. But much of the time, mundane skill and magic are combined together. A lamplighter can work with mundane lanterns, but also learns the vagaries of of maintaining the everbright lanterns that light the city\u2019s streets. Chefs often heat and flavor food with a cantrip. A locksmith may learn to cast arcane lock, and an actor may learn thaumaturgy to help project their voice or create stage effects. If you take this background, it is recommended that you play either some sort or caster and\/or take Magic Initiate as your free feat, choosing a few spells that would have served you in your line of work. What was your profession? How did your grasp of magic aid you? And how did your work influence the rest of your life. What district did you live in? Did your work earn you the respect or contempt of your family, friends, neighbors, and colleagues?"
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Feature: Arcane Knack.",
+          "entries": [
+            "You are you skilled in the practical application of magic to mundane skills and pursuits. You may use Intelligence (Arcana) when attempting to discern how to use, disable or bypass an otherwise mundane object to, at the discretion of the DM, come up with a novel magical solution to the challenge facing you, involving one of your known or prepared spells, or a magic item or piece of magitech that you have on you or otherwise have access to."
+          ],
+          "data": {
+            "isFeature": true
+          }
+        },
+        {
+          "type": "item",
+          "name": "Equipment",
+          "entry": "One set of tools with which you are proficient, a few pages torn from a user manual for an obscure piece of magitech, common clothes, and a belt pouch with 10 gp."
+        }
+      ],
+      "name": "Magewright",
+      "source": "Godfall",
+      "skillProficiencies": [
+        {
+          "Arcana": true,
+          "choose": {
+            "from": [
+              "Perception",
+              "Performance"
+            ]
+          }
+        }
+      ],
+      "languageProficiencies": [
+        {
+          "any": 1
+        }
+      ]
+    },
+    {
+      "entries": [
+        {
+          "type": "list",
+          "style": "list-hang-notitle",
+          "items": [
+            {
+              "type": "item",
+              "name": "Skill Proficiencies",
+              "entry": "{@skill Athletics}, {@skill Survival}"
+            },
+            {
+              "type": "item",
+              "name": "Tool Proficiencies",
+              "entry": Miner's tools"
+            },
+            {
+              "type": "item",
+              "name": "Languages",
+              "entry": "One of your choice"
+            }
+          ]
+        },
+        {
+          "name": "Overview",
+          "type": "entries",
+          "entries": [
+            "You have spent a great deal of time in the mines of the Underward searching for hidden veins of ore, gems, and mineral wealth. As such, you know well the thrill of following the geologic clues hidden in bands of rock and soil to pockets of precious metals or gemstones. You have also cried tears of frustration when the vein of ore that could make you rich and famous petered out after only a few feet, yielding barely enough wealth to pay for repairing your tools before moving on to search another promising claim."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Feature: Rustic Hospitality.",
+          "entries": [
+            "Since you come from the ranks of the common folk, you fit in among them with ease. You can find a place to hide, rest, or recuperate among other commoners, unless you have shown yourself to be a danger to them. They will shield you from the law or anyone else searching for you, though they will not risk their lives for you."
+          ],
+          "data": {
+            "isFeature": true
+          }
+        },
+        {
+          "type": "item",
+          "name": "Equipment",
+          "entry": "A set of miner's tools, a {@item block and tackle}, a {@item climber's kit}, a set of common clothes, and a belt pouch containing 5 gp."
+        }
+      ],
+      "name": "Miner",
+      "source": "Godfall",
+      "skillProficiencies": [
+        {
+          "Athletics": true,
+          "Survival": true
+        }
+      ]
+    },
+    {
+      "entries": [
+        {
+          "type": "list",
+          "style": "list-hang-notitle",
+          "items": [
+            {
+              "type": "item",
+              "name": "Skill Proficiencies",
+              "entry": "{@skill Survival} and choose one additional from either {@skill Animal Handling} or {@skill Deception}."
+            },
+            {
+              "type": "item",
+              "name": "Languages",
+              "entry": "Two of your choice"
+            }
+          ]
+        },
+        {
+          "name": "Overview",
+          "type": "entries",
+          "entries": [
+            "You were transformed into a beast, a monstrosity, or a mundane object, and lived that way for years. You most likely entered this form unwillingly, but how you came down with this affliction is up to you. A caster with an axe to grind may have cast polymorph or true polymorph for some petty offense committed by you or a loved one. Maybe you unwittingly donned a cursed magic item. Perhaps you activated some arcane trap when you accidentally stumbled into an ancient ruin in the tunnels below the city. You also should decide who or what changed you back into your true form. You were in your alternate form for years. How was living in that form different from the way you lived your life before? In what ways were you more powerful? Less powerful? Do you miss the strength of your old form, or are you glad to be back in your own flesh? If you were a wild animal or a monster, how did you survive in the crowded urban environment of Solace? Were you kept in a menagerie or a circus? Or as an exotic pet? If you were an object, what were you used for and by whom? Was your owner aware of your true nature?"
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Feature: Kindred Spirit",
+          "entries": [
+            "Non-hostile creatures of the same type as your previously polymorphed form are inclined to like you. These creatures might help guide you to a place if they know its location, provide you with shelter, or shield you from danger, provided they aren\u2019t put directly into harm\u2019s way."
+          ],
+          "data": {
+            "isFeature": true
+          }
+        },
+        {
+          "type": "item",
+          "name": "Equipment",
+          "entry": "A bag of {@item caltrops|phb}, a realistic ink drawing of your polymorphed form, a set of common clothes, and a belt pouch with 10 gp."
+        }
+      ],
+      "name": "Polymorphed",
+      "source": "Godfall",
+      "skillProficiencies": [
+        {
+          " Survival ": true,
+          "choose": {
+            "from": [
+              "Animal Handling",
+              "Deception"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "entries": [
+        {
+          "type": "list",
+          "style": "list-hang-notitle",
+          "items": [
+            {
+              "type": "item",
+              "name": "Skill Proficiencies",
+              "entry": "Your choice of any two from {@skill Investigation}, {@skill Perception}, and {@skill Survival}."
+            },
+            {
+              "type": "item",
+              "name": "Tool Proficiencies",
+              "entry": "Thieves’ tools and your choice of either {@item Navigator's tools|phb} or {@item Cartographer's tools|phb}."
+            }
+          ]
+        },
+        {
+          "name": "Overview",
+          "type": "entries",
+          "entries": [
+            "You once made your living as a professional scavenger, seeking out useful objects cast off by their former owners or abandoned after the destruction of Godfall. Most likely, you were a member of an established scavenging crew, in which case you are a tiefling if you\u2019ve been scavenging in the Broken Lands for a period longer than the past two years.  In doing so, you provided a valuable service by providing your fellow citizens with much-needed resources, and did so at considerable danger to your own person. As such, members (whether current or former) of scavenging crews that explored the Broken Lands are looked on with favor and admiration by their fellow citizens. Who were the other people on your crew, and how long did you work together? Are you still close, or did you have a falling out with them? What kind close calls with the Maelstrom or other dangers did you survive together--or did you lose people along the way in your dangerous line of work? Alternately, you may have never left the city at all and simply be a denizen of the lower levels who scrounges discarded tech that has fallen from the upper tiers of the city. What secondhand treasures have you unearthed in Solace\u2019s scrap heaps? Did you have allies or rivals who sought to aid or stymie you in your scavenging forays in the city?"
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Feature: Appriasal",
+          "entries": [
+            "Other harvesters respect your life of hard labor, and are available to consult on the value of non-magical gems and art objects for free. In addition when you find an object of value, you know the value of the object and you know what sort of person would be interested in buying such an object."
+          ],
+          "data": {
+            "isFeature": true
+          }
+        },
+        {
+          "type": "item",
+          "name": "Equipment",
+          "entry": " One set of tools with which you are proficient, a 10-foot pole, a map of a location you or someone you know have explored, traveler\u2019s clothes, and a belt pouch with 5 gp."
+        }
+      ],
+      "name": "Scavenger",
+      "source": "Godfall",
+      "skillProficiencies": [
+        {
+          "choose": {
+            "from": [
+              "Investigation",
+              "Perception",
+              "Survival"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "entries": [
+        {
+          "type": "list",
+          "style": "list-hang-notitle",
+          "items": [
+            {
+              "type": "item",
+              "name": "Skill Proficiencies",
+              "entry": "{@skill Insight}, {@skill Perception}"
+            },
+            {
+              "type": "item",
+              "name": "Tool Proficiencies",
+              "entry": "One gaming set of your choice (cards, bone dice, or some other divination tool)."
+            },
+            {
+              "type": "item",
+              "name": "Languages",
+              "entry": "One of your choice"
+            }
+          ]
+        },
+        {
+          "name": "Overview",
+          "type": "entries",
+          "entries": [
+            "Seers are rare individuals endowed with the gift to see beyond the mundane veil cloaking the world to the truth illuminated by those stars\u2026 or at least, they believe this to be so. Cause and effect run in scattered lines to a seer\u2019s eyes, linking individuals and events seemingly unrelated to the casual observer. Do you truly possess some means to see the twists of fate? Perhaps it may be so. In any case, you believe this strongly enough that you\u2019ve convinced others of the veracity of your visions. Your clients seek out your services and regard you with a certain degree of respect, if not awe. Where do you believe your visions come from? The gods? The arcane tumult of the Maelstrom? Or something else entirely\u2026?"
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Feature: Glimpse Of Fortune",
+          "entries": [
+            "Using a minor method of divination, you are able to see a glimpse of a target\u2019s future. You must spend one hour in conversation with the subject and consultation with your divination method. At the end of this time you can offer insight into the subject\u2019s possible future. These details are always vague, and both the information and its accuracy are up to the DM\u2019s discretion. Regardless of the information attained, the reading affords you the chance to gain insight into your subject and possibly enter their good graces. After giving a reading, you can expect a client to be more relaxed and willing to favorably consider any proposal you make (treat them as one category more favorable for purposes of social interaction, DMG p. 244). Additionally, you can receive minor favors or consideration from past subjects in a variety of locations. Assume you can find at least one friendly contact in a city in which you have spent at least some time in the past."
+          ],
+          "data": {
+            "isFeature": true
+          }
+        },
+        {
+          "type": "item",
+          "name": "Equipment",
+          "entry": "A gaming set of your choice, a token of appreciation from a past client, a set of common clothes, and a belt pouch containing 5 gp"
+        }
+      ],
+      "name": "Seer",
+      "source": "Godfall",
+      "skillProficiencies": [
+        {
+          "Insight": true,
+          "Perception": true
+        }
+      ],
+      "languageProficiencies": [
+        {
+          "any": 1
+        }
+      ]
+    }
+  ]
+}
