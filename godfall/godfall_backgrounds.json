@@ -276,6 +276,50 @@
           "type": "item",
           "name": "Equipment",
           "entry": "A {@item holy symbol|phb} (subtly modified to represent your own heretical belief), a prayer book or prayer wheel, vestments, a bottle of invisible ink, a quill, a set of common clothes, and a pouch containing 10 gp."
+        },
+        {
+          "name": "Heretical belief",
+          "type": "entries",
+          "entries": [
+            "Choose a belief of your own devising that defines you as a heretic, or choose one from (or roll on) the table below.", 
+            {
+              "type": "table",
+              "colLabels": [
+                "d6",
+                "Belief"
+              ],
+              "colStyles": [
+                "col-1 text-align-center",
+                "col-11"
+              ],
+              "rows": [
+                [
+                  "1",
+                  "You believe that the Architect created the Tradeforged using necromancy and stolen humanoid souls."
+                ],
+                [
+                  "2",
+                  "You believe that the Dawnbringer rules over a vast network of spies with its hooks sunk in every facet of life in Solace, secretly controlling the lives of its citizens from behind the scenes. Whether you venerate this perceived aspect of his divinity or are intensely paranoid and seek to discover proof and unmask him to the world is up to you."
+                ],
+                [
+                  "3",
+                  "You believe the clergy of the Earthheart to be inherently corrupt, since many of his clerics and paladins are drawn from among Solace’s elite: the wealthy and powerful farming families. The only way to root out this corruption, you and others of your thinking maintain, is for His clergy to be headed instead by the city’s druid circles."
+                ],
+                [
+                  "4",
+                  "You believe that the Bastion isn’t actually a single entity or a god at all, but rather several mortals playing the role of a god by donning a set of magical armor, at the bidding of the actual Sovereigns."
+                ],
+                [
+                  "5",
+                  "You believe that the Martyr, generally regarded as a saint, is actually a dead god and revere him as such. Others who share your faith speak of the day when he shall be reborn and take his rightful place among the Sovereign Four, making their number Five, and ushering in a golden age of peace and prosperity for all of Solace’s people."
+                ],
+                [
+                  "6",
+                  "You believe in the divinity of the Maelstrom as the living essence of the slain titan of Magic…"
+                ]
+              ]
+            }
+          ]
         }
       ],
       "name": "Heretic",
@@ -366,7 +410,7 @@
             {
               "type": "item",
               "name": "Tool Proficiencies",
-              "entry": Miner's tools"
+              "entry": "Miner's tools"
             },
             {
               "type": "item",
