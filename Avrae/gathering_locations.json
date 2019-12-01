@@ -1,0 +1,253 @@
+{
+  "DM":["kl1", "", "kh1"],
+  "E":"You need to type the full name from this list:\n`%s`",
+  "WC":"(+1 success due to Woodchuck)",
+  "EX":"expires",
+  "AV":"available",
+  "EXH":"%d Level(s) of exhaustions gained",
+  "META":"DC: **%s** Threat: **%s**\nProtection: **%s** Bonus: **%s**",
+  "TITLE":"%s attempts to gather %s using %s(%s)!",
+  "N":["0","1","2","3","4","5","6","7","8","9"],
+  "A":"adv",
+  "D":"dis",
+  "T":"threat",
+  "eT":"eTools",
+  "pT":"pTools",
+  "mats": {
+    "essence": {
+      "name": "Essence",
+      "dc": 15,
+      "type":"essence",
+      "threat": 5,
+      "tool": {
+        "arcana": ["intelligenceMod"],
+        "Alchemist's Supplies": ["intelligenceMod", "wisdomMod"],
+        "Tinker's Tools": ["intelligenceMod", "dexterityMod"]
+      }
+    },
+    "aether": {
+      "name": "Aether",
+      "type":"herb",
+      "dc": 21,
+      "threat": 5,
+      "tool": {
+        "Herbalism Kit": ["wisdomMod"]
+      }
+    },
+    "albedo": {
+      "name": "Albedo",
+      "type":"herb",
+      "dc": 15,
+      "threat": 5,
+      "tool": {
+        "Herbalism Kit": ["wisdomMod"]
+      }
+    },
+    "hydragenum": {
+      "name": "Hydragenum",
+      "type":"herb",
+      "dc": 12,
+      "threat": 5,
+      "tool": {
+        "Herbalism Kit": ["wisdomMod"]
+      }
+    },
+    "nigredo": {
+      "name": "Nigredo",
+      "type":"herb",
+      "dc": 15,
+      "threat": 5,
+      "tool": {
+        "Herbalism Kit": ["wisdomMod"]
+      }
+    },
+    "quebrith": {
+      "name":"Quebrith",
+      "type":"herb",
+      "dc": 12,
+      "threat": 5,
+      "tool": {
+        "Herbalism Kit": ["wisdomMod"]
+      }
+    },
+    "rebis": {
+      "name": "Rebis",
+      "type":"herb",
+      "dc": 15,
+      "threat": 5,
+      "tool": {
+        "Herbalism Kit": ["wisdomMod"]
+      }
+    },
+    "rubedo": {
+      "name": "Rubedo",
+      "type":"herb",
+      "dc": 12,
+      "threat": 5,
+      "tool": {
+        "Herbalism Kit": ["wisdomMod"]
+      }
+    },
+    "vermilion": {
+      "name": "Vermilion",
+      "type":"herb",
+      "dc": 15,
+      "threat": 5,
+      "tool": {
+        "Herbalism Kit": ["wisdomMod"]
+      }
+    },
+    "vitriol": {
+      "name": "Vitriol",
+      "type":"herb",
+      "dc": 12,
+      "threat": 5,
+      "tool": {
+        "Herbalism Kit": ["wisdomMod"]
+      }
+    },
+
+    "stone": {
+      "name": "Stone",
+      "type":"mine",
+      "dc": 10,
+      "threat": 5,
+      "tool": {
+        "Miner's Tools": ["strengthMod"]
+      }
+    },
+    "bronze": {
+      "name": "Bronze",
+      "type":"mine",
+      "dc": 10,
+      "threat": 5,
+      "tool": {
+        "Miner's Tools": ["strengthMod"]
+      }
+    },
+    "iron": {
+      "name": "Iron",
+      "type":"mine",
+      "dc": 12,
+      "threat": 5,
+      "tool": {
+        "Miner's Tools": ["strengthMod"]
+      }
+    },
+    "steel": {
+      "name": "Steel",
+      "type":"mine",
+      "dc": 12,
+      "threat": 5,
+      "tool": {
+        "Miner's Tools": ["strengthMod"]
+      }
+    },
+    "wood": {
+      "name": "Wood",
+      "type":"wood",
+      "dc": 10,
+      "threat": 5,
+      "tool": {
+        "Woodcutter's Tools": ["strengthMod"]
+      }
+    },
+    "leather": {
+      "name": "Leather",
+      "type":"leather",
+      "dc": 10,
+      "threat": 5,
+      "tool": {
+        "Hunters's Tools": ["wisdomMod"]
+      }
+    },
+
+    "berbercane": {
+      "name": "Berbercane",
+      "type":"herb",
+      "dc": 15,
+      "threat": 5,
+      "expires":1576972800,
+      "tool": {
+        "Herbalism Kit": ["wisdomMod"]
+      }
+    },
+    "celandine": {
+      "name": "Celandine",
+      "type":"herb",
+      "dc": 15,
+      "threat": 5,
+      "expires":1576972800,
+      "tool": {
+        "Herbalism Kit": ["wisdomMod"]
+      }
+    },
+    "cortinarius": {
+      "name": "Cortinarius",
+      "type":"herb",
+      "dc": 18,
+      "threat": 5,
+      "expires":1576972800,
+      "tool": {
+        "Herbalism Kit": ["wisdomMod"]
+      }
+    },
+
+    "allspice": {
+      "name": "Allspice",
+      "type":"herb",
+      "dc": 18,
+      "threat": 5,
+      "expires":1584662400,
+      "available":1576972800,
+      "tool": {
+        "Herbalism Kit": ["wisdomMod"]
+      }
+    },
+    "balisse": {
+      "name": "Balisse",
+      "type":"herb",
+      "dc": 18,
+      "threat": 5,
+      "expires":1584662400,
+      "available":1576972800,
+      "tool": {
+        "Herbalism Kit": ["wisdomMod"]
+      }
+    },
+    "beggartick": {
+      "name": "Beggartick",
+      "type":"herb",
+      "dc": 15,
+      "threat": 5,
+      "expires":1584662400,
+      "available":1576972800,
+      "tool": {
+        "Herbalism Kit": ["wisdomMod"]
+      }
+    },
+
+    "hafsinite": {
+      "name": "Hafsinite",
+      "type":"mine",
+      "dc": 20,
+      "threat": 15,
+      "expires":1575244800,
+      "tool": {
+        "Miner's Tools": ["strengthMod"]
+      }
+    },
+
+    "scrap": {
+      "name": "Scrap",
+      "type":"scrap",
+      "dc": 12,
+      "threat": 15,
+      "expires":1573776000,
+      "tool": {
+        "investigation": ["intelligenceMod"],
+        "survival": ["wisdomMod"]
+      }
+    }
+  }
+}

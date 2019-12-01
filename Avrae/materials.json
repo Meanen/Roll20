@@ -1,0 +1,1746 @@
+{
+  "types": ["cloth", "metal", "gem", "wood"],
+  "materials": {
+    "cotton": {
+      "name": "Cotton",
+      "rarity": "Common",
+      "type": "cloth",
+      "description": ["Much of the clothing worn by the citizens of Solace is cotton cloth of varying quality. The cultivation, picking, processing, and weaving of cotton, as well as the cultivation of dyes for the fabric, are all extremely labor intensive."],
+      "usages": [{
+        "name": "Armor",
+        "entries": [
+          "**Normal**: As per the PHB",
+          "**Artisan**: +1 Bonus to AC"
+        ]
+      }]
+    },
+    "wool": {
+      "name": "Wool",
+      "rarity": "Common",
+      "type": "cloth",
+      "description": ["The hair of the sheep shepherded by the Greenhands comes in a variety of shades, and can be carded and woven into fabrics of a wide range of quality. Wool is the fabric of choice for blankets, cloaks, and any apparel made to protect against the winter cold."],
+      "usages": [{
+        "name": "Clothing",
+        "entries": [
+          "**Normal**: You have advantage on saving throws against extreme cold weather effects.",
+          "**Artisan**: You automatically succeed on saving throws against extreme cold weather effects up to DC 10."
+        ]
+      }, {
+        "name": "Armor",
+        "entries": ["**Artisan**: +1 Bonus to AC"]
+      }]
+    },
+    "silk": {
+      "name": "Silk",
+      "rarity": "Common",
+      "type": "cloth",
+      "description": ["The Greenhands cultivate mulberry trees, not just for their sweet fruit, but to house and feed the silkworms who spin cocoons of fine and surprisingly strong thread. Silken garments breath and lay light on the body, making them a blessing on hot summer days if you can afford them."],
+      "usages": [{
+        "name": "Clothing",
+        "entries": [
+          "**Normal**: You have advantage on saving throws against extreme cold weather effects.",
+          "**Artisan**: You have advantage on saving throws against extreme heat weather effects.",
+          "**Masterwork**: You automatically succeed on saving throws against extreme heat weather effects up to a DC 10."
+        ]
+      }]
+    },
+    "animal hide": {
+      "name": "Animal Hide",
+      "rarity": "Common",
+      "type": "leather",
+      "description": ["It’s some skin from a cow. Probably."],
+      "usages": [{
+        "name": "Armor",
+        "entries": [
+          "**Normal**: As per the PHB",
+          "**Artisan**: +1 Bonus to AC",
+          "**Masterwork**: +2 Bonus to AC"
+        ]
+      }]
+    },
+    "chitin": {
+      "name": "Chitin",
+      "rarity": "Common",
+      "type": "leather (Substitutes Metal)",
+      "description": ["This rigid material makes up the exoskeletons of insects and crustaceans. While most common insects are too small to yield useful amounts of this substance, chitin harvested from larger creatures of the Maelstrom can be used to create sturdy armor without metal."],
+      "usages": [{
+        "name": "Natural Properties",
+        "entries": [
+          "**Normal**: **Rustproof**; **Lightweight**; -1 penalty to AC, attack and damage rolls.",
+          "**Artisan**: Removes the -1 penalty."
+        ]
+      }, {
+        "name": "Armor",
+        "entries": [
+          "**Masterwork**: +1 Bonus to AC"
+        ]
+      }, {
+        "name": "Shields",
+        "entries": [
+          "**Masterwork**: +1 Bonus to AC"
+        ]
+      }]
+    },
+    "bronze": {
+      "name": "Bronze",
+      "rarity": "Common",
+      "type": "metal",
+      "description": ["The alloy of copper and tin has been used for crafting since ancient times. It is softer than iron based alloys, but does not rust, and is significantly better than nothing."],
+      "usages": [{
+        "name": "Natural Properties",
+        "entries": ["**Normal**: **Rustproof**"]
+      }, {
+        "name": "Armor, Shields",
+        "entries": [
+          "**Normal**: -1 penalty to AC",
+          "**Artisan**: Eliminates the -1 penalty"
+        ]
+      }, {
+        "name": "Weapons",
+        "entries": [
+          "**Normal**: -1 penalty to attack and damage rolls",
+          "**Artisan**: Eliminates the -1 penalty"
+        ]
+      }]
+    },
+    "iron": {
+      "name": "Iron",
+      "rarity": "Common",
+      "type": "metal",
+      "description": ["The workhorse material of Solace, this dull grey metal is easy to smelt and forge, and is a cheap material for making serviceable weapons and armor. Unfortunately, it has a tendency to rust if not properly maintained, causing its strength to fade with time."],
+      "usages": [{
+        "name": "Natural Properties",
+        "entries": [
+          "**Normal**: As per the PHB"
+        ]
+      }, {
+        "name": "Armor, Shields",
+        "entries": [
+          "**Artisan**: +1 bonus to AC"
+        ]
+      }, {
+        "name": "Weapons",
+        "entries": [
+          "**Artisan**: +1 bonus to attack and damage rolls"
+        ]
+      }]
+    },
+    "steel": {
+      "name": "Steel",
+      "rarity": "Common",
+      "type": "metal",
+      "description": ["By alloying iron with small amounts of other ores, and smelting it in the proper way, a smith can create a shiny metal that is resistant to corrosion. This steel can be further strengthened by alloying with essence, creating truly remarkable arms."],
+      "usages": [{
+        "name": "Natural Properties",
+        "entries": ["**Normal**: **Acidproof**"]
+      }, {
+        "name": "Armor, Shields",
+        "entries": [
+          "**Artisan**: +1 bonus to AC",
+          "**Masterwork**: +2 bonus to AC"
+        ]
+      }, {
+        "name": "Weapons",
+        "entries": [
+          "**Artisan**: +1 bonus to attack and damage rolls",
+          "**Masterwork**: +2 bonus to attack and damage rolls"
+        ]
+      }, {
+        "name": "Ammunition",
+        "entries": [
+          "**Normal**: **Honed** 1.",
+          "**Artisan**: **Honed** 3.",
+          "**Masterwork**: **Honed** 5."
+        ]
+      }]
+    },
+    "wood": {
+      "name": "Basic Wood",
+      "rarity": "Common",
+      "type": "wood",
+      "description": ["It’s log. It’s big. It’s heavy. It’s wood."],
+      "usages": [{
+        "name": "Natural Properties",
+        "entries": [
+          "**Normal**: As per the PHB"
+        ]
+      }, {
+        "name": "Armor, Shields",
+        "entries": [
+          "**Artisan**: +1 bonus to AC"
+        ]
+      }, {
+        "name": "Weapons",
+        "entries": [
+          "**Artisan**: +1 bonus to attack and damage rolls"
+        ]
+      }]
+    },
+    "bone": {
+      "name": "Bone",
+      "rarity": "Common",
+      "type": "wood",
+      "description": ["The bones of a variety of creatures can be used for crafting. The large horns, teeth, and claws of an animal, as well as their skeleton, are considered to be in the bone zone."],
+      "usages": [{
+          "name": "Natural Properties",
+          "entries": [
+            "**Normal**: **Rustproof**; -1 penalty to AC, attack and damage rolls.",
+            "**Artisan**: Removes the -1 penalty."
+          ]
+        },
+        {
+          "name": "Foci",
+          "entries": [
+            "**Normal**: Removes the -1 penalty.",
+            "**Artisan**: Divination **Affinity** 1.",
+            "**Masterwork**: Divination **Affinity** 2."
+          ]
+        }
+      ]
+    },
+    "arcanaweave": {
+      "name": "Arcanaweave",
+      "rarity": "Rare",
+      "type": "cloth",
+      "description": [
+        "**Essence Cost**: 3",
+        "This prized cloth comes in an endless variety of colors and patterns, but is recognizable by its telltale shimmer when it moves with its wearer."
+      ],
+      "usages": [{
+        "name": "Armor, Clothing",
+        "entries": [
+          "**Artisan**: **Conduit** 1.",
+          "**Masterwork**: **Conduit** 2."
+        ]
+      }, {
+        "name": "Nets",
+        "entries": [
+          "**Artisan**: +3 to AC and escape DC.",
+          "**Masterwork**: A creature restrained by this weapon has disadvantage on all saving throws against spells. Furthermore whenever it would take damage from a spell, it takes damage as if that spell were cast 1 level higher."
+        ]
+      }]
+    },
+    "darkweave": {
+      "name": "Darkweave",
+      "rarity": "Uncommon",
+      "type": "cloth",
+      "description": [
+        "**Essence Cost**: 1",
+        "Recently discovered by blending shadow magic with high-quality silks, this unique material absorbs and dissipates the heat signature of its wearer. Under the right conditions, this fabric can help blend the wearer into their surroundings, hiding them from the eyes of those with darkvision."
+      ],
+      "usages": [{
+        "name": "Armor",
+        "entries": [
+          "**Normal**: This armor will never pose disadvantage to stealth checks.",
+          "**Artisan**: While wearing this armor and in darkness, other creatures that rely on darkvision have disadvantage on perception check to spot you."
+        ]
+      }, {
+        "name": "Clothing",
+        "entries": [
+          "**Artisan**: While wearing this clothing and in darkness, other creatures that rely on darkvision have disadvantage on perception check to spot you."
+        ]
+      }]
+    },
+    "dreamweave": {
+      "name": "Dreamweave",
+      "rarity": "Rare",
+      "type": "cloth",
+      "description": [
+        "**Essence Cost**: 3",
+        "This ever changing cloth is the latest fashion among the nobles as it’s color, pattern and style seem to shift and change with each new season so that it’s never out of style."
+      ],
+      "usages": [{
+        "name": "Clothing",
+        "entries": [
+          "**Normal**: **Changing Seasons** 1.",
+          "**Artisan**: **Changing Seasons** 2.",
+          "**Masterwork**: **Changing Seasons** 3."
+        ]
+      }]
+    },
+    "greenweave": {
+      "name": "Greenweave",
+      "rarity": "Uncommon",
+      "type": "cloth",
+      "description": [
+        "**Essence Cost**: 1",
+        "Greentail fern forms long sinuous frond with pinnae that resemble scales. It’s surface is fuzzy and dappled with all the colors of the forest creating a hazy optical effect when rustled by the wind. When woven into Greenweeave, the resulting fabric maintains this strange appearance."
+      ],
+      "usages": [{
+        "name": "Armor",
+        "entries": [
+          "**Normal**: This armor will never pose disadvantage to stealth checks.",
+          "**Artisan**: While wearing this armor, other creatures have disadvantage on perception check to spot you while you in naturally green terrain such as forest or grassland."
+        ]
+      }, {
+        "name": "Clothing",
+        "entries": [
+          "**Artisan**: While wearing this clothing, other creatures have disadvantage on perception check to spot you while you in naturally green terrain such as forest or grassland."
+        ]
+      }]
+    },
+    "mooncloth": {
+      "name": "Mooncloth",
+      "rarity": "Uncommon",
+      "type": "cloth",
+      "description": [
+        "**Essence Cost**: 1",
+        "Legend claims this soft fabric was first woven from beams of moonlight, the warp and weft of it formed from each of Otera’s two moons. This seems to be supported by the hue of the fabric itself, as it seems to shift depending on which moon is waxing or waning. True or not, the gentle glow of the fabric, along with its restful properties, make it popular with certain Druidic circles and well off parents alike."
+      ],
+      "usages": [{
+        "name": "Clothing",
+        "entries": [
+          "**Normal**: This item sheds dim light for 10 feet while in total darkness. While exposed to moonlight this becomes 20 feet and counts as moonlight.",
+          "**Artisan**: **Restful** 1.",
+          "**Masterwork**: **Restful** 2."
+        ]
+      }]
+    },
+    "phase spider silk": {
+      "name": "Phase Spider Silk",
+      "rarity": "Rare",
+      "type": "cloth",
+      "description": [
+        "**Essence Cost**: 3",
+        "Slightly sticky to the touch upon harvest, this material transforms into an almost transparent cloth in the hands of a skilled weaver. Without the occasional glitter, it would feel as if the cloth has disappeared out of existence."
+      ],
+      "usages": [{
+        "name": "Clothing",
+        "entries": [
+          "**Normal**: **Blinking** 1.",
+          "**Artisan**: **Blinking** 2.",
+          "**Masterwork**: Whenever you make a saving throw against an effect that would send you to another plane or demiplane, you do do so at advantage."
+        ]
+      }]
+    },
+    "phoenix fibre": {
+      "name": "Phoenix Fibre",
+      "rarity": "Rare",
+      "type": "cloth",
+      "description": [
+        "**Essence Cost**: 3",
+        "This silky cloth seems alive with flame, flaring up whenever its wearer moves. It comes in shades of reds, oranges, and yellows, as an homage to the bird whose name it shares. The flames it produces are harmless, though quite beautiful to witness."
+      ],
+      "usages": [{
+        "name": "Clothing",
+        "entries": [
+          "**Normal**: Wisps of harmless fire rise from this clothing as it moves.",
+          "**Artisan**: You can spend 15 feet of movement to spin and wreath yourself in flickering flames and smoke. Until the end of your turn opportunity attacks against you are made at disadvantage.",
+          "**Masterwork**: You can spend 15 feet of movement as part of taking the dodge action to create a 5-foot-diameter sphere of smoke centered on you. The sphere’s area is heavily obscured. It lasts until the start of your next turn."
+        ]
+      }]
+    },
+    "blessed amber": {
+      "name": "Blessed Amber",
+      "rarity": "Lost",
+      "type": "gem",
+      "description": [
+        "**Essence Cost**: 3",
+        "The petrified sap of the Great Archfey Tree known as Father Oak. It’s gold and brown hues seem relatively plain to look at, but the gems bring a sense of peace and belonging when held."
+      ],
+      "usages": [{
+        "name": "Natural Properties",
+        "entries": [
+          "1 Unit of Blessed Amber can replace a diamond worth at least 500 gp as a spell component. The Blessed Amber is still consumed, destroying the item it is set in."
+        ]
+      }, {
+        "name": "Jewelry",
+        "entries": [
+          "**Normal**: You have advantage on death saving throws.",
+          "**Artisan**: You have advantage on resurrection checks where this item was used as the Component.",
+          "**Masterwork**: The item is no longer consumed when used a spell component, instead it’s quality drops to low."
+        ]
+      }]
+    },
+    "criolithe": {
+      "name": "Criolithe",
+      "rarity": "Rare",
+      "type": "gem (Substitutes Metal)",
+      "description": [
+        "**Essence Cost**: 3",
+        "This rich purple crystal requires special care when being mined, and even more while being forged. However, in skilled hands, this purple crystal can be transformed into a vibrant navy blue color that seems to shimmer with motes of gold and red light when viewed at the right angles. The crystal itself is fairly dense, needing a fair amount of strength being required to readily use it, but to those who do gain great benefit from the unique properties of this material."
+      ],
+      "usages": [{
+        "name": "Natural Properties",
+        "entries": [
+          "**Unbreakable**"
+        ]
+      }, {
+        "name": "Foci",
+        "entries": [
+          "**Artisan**: Evocation **Affinity** 1.",
+          "**Masterwork**: Evocation **Affinity** 2."
+        ]
+      }, {
+        "name": "Shields",
+        "entries": [
+          "**Normal**: **Bulky**.",
+          "**Artisan**: **Spell Storing** 1.",
+          "**Masterwork**: **Spell Storing** 3."
+        ]
+      }, {
+        "name": "Jewelry",
+        "entries": [
+          "**Artisan**: **Conduit** 1.",
+          "**Masterwork**: **Conduit** 2."
+        ]
+      }]
+    },
+    "dawn star": {
+      "name": "Dawn Star",
+      "rarity": "Rare",
+      "type": "gem",
+      "description": [
+        "**Essence Cost**: 3",
+        "This golden precious gem is named after the the God-King himself, and appropriately so. When properly cut and outdoors, regardless of the weather conditions, the gem accurately reflects the position of the sun by acting like a mirror of a clear sky. As night falls, the sun within the gem sets and the moon comes out, along with the stars."
+      ],
+      "usages": [{
+        "name": "Jewelry",
+        "entries": [
+          "**Artisan**: **Boundless Spirit** 1.",
+          "**Masterwork**: **Boundless Spirit** 2."
+        ]
+      }]
+    },
+    "labradorite": {
+      "name": "Labradorite",
+      "rarity": "Uncommon",
+      "type": "gem",
+      "description": [
+        "**Essence Cost**: 1",
+        "This gem would trick those with inexperienced eyes to think that it was just an ordinary rock, but when successfully mined and brought to daylight, this crystal creates a dazzling optical phenomenon of a blue green to deep blue sheen that creates its distinctive shimmery, ethereal effect."
+      ],
+      "usages": [{
+        "name": "Foci",
+        "entries": [
+          "**Artisan**: Illusion **Affinity** 1.",
+          "**Masterwork**: Illusion **Affinity** 2."
+        ]
+      }, {
+        "name": "Jewelry",
+        "entries": [
+          "**Normal**: You can use this item as a focus to cast Disguise Self. When you do so, the casting time for Disguise Self is 1 bonus action.",
+          "**Artisan**: Whenever you cast Disguise Self through this item, other creatures have disadvantage on Intelligence (Investigation) checks to discern that you are disguised.",
+          "**Masterwork**: Whenever you cast Disguise Self through this item you can affect any number of willing creatures within a 5 foot radius of yourself. Each other creature takes on the same disguise as yourself with a slight variation, such as having a different colored outfit, glasses, or a mustache. This illusion immediately ends on any creature that moves more then 5 feet from you."
+        ]
+      }]
+    },
+    "omniate": {
+      "name": "Omniate",
+      "rarity": "Lost",
+      "type": "gem",
+      "description": [
+        "**Essence Cost**: 1",
+        "This unassuming crystal would lead the inexperienced to think it an azure-hued quartz. However, hidden within its confines rest veins of indigo and platinum, which appear to branch through the gem like a circulatory system. When worked by the hands of a skilled artisan, the veins spring to life, pulsing with a regular heartbeat of dim light giving its wielder the impression it might actually be alive."
+      ],
+      "usages": [{
+        "name": "Natural Properties",
+        "entries": [
+          "**Normal**: **Regrowing**."
+        ]
+      }, {
+        "name": "Foci",
+        "entries": [
+          "**Artisan**: **Soothing** 1.",
+          "**Masterwork**: **Soothing** 2."
+        ]
+      }, {
+        "name": "Jewelry",
+        "entries": [
+          "**Artisan**: **Invigorating** 3.",
+          "**Masterwork**: **Invigorating** 5."
+        ]
+      }, {
+        "name": "Weapons",
+        "entries": [
+          "**Artisan**: **Compact**; +1 bonus to attack and damage rolls.",
+          "**Masterwork**: **Grasping**; +2 bonus to attack and damage rolls."
+        ]
+      }]
+    },
+    "true ice": {
+      "name": "True Ice",
+      "rarity": "Rare",
+      "type": "gem",
+      "description": [
+        "**Essence Cost**: 3",
+        "A pale light blue shard of freezing cold ice. The slightest touch will leave you skin numb from the cold, and a holding it for any length of time risks serious injury. No matter how much heat the ice is exposed to it never melts."
+      ],
+      "usages": [{
+        "name": "Natural Properties",
+        "entries": [
+          "**Normal**: **Unbreakable**; Magitech augments can not be applied to items made of True Ice."
+        ]
+      }, {
+        "name": "Foci",
+        "entries": [
+          "**Artisan**: Cold **Empowering** 1.",
+          "**Masterwork**: Cold **Empowering** 2."
+        ]
+      }, {
+        "name": "Jewelry",
+        "entries": [
+          "**Artisan**: You have advantage on saving throws against extreme heat weather effects.",
+          "**Masterwork**: You automatically succeed on saving throws against extreme heat weather effects up to a DC 10."
+        ]
+      }, {
+        "name": "Shields",
+        "entries": [
+          "**Artisan**: Cold **Retribution** 1",
+          "**Masterwork**: Cold **Retribution** 2"
+        ]
+      }, {
+        "name": "Weapons",
+        "entries": [
+          "**Artisan**: +1 bonus to attack and damage rolls; Deals an additional 1d4 cold damage",
+          "**Masterwork**: +2 bonus to attack and damage rolls; Deals an addtional 1d6 cold damage."
+        ]
+      }]
+    },
+    "monster hide": {
+      "name": "Common Monster Hide",
+      "rarity": "Uncommon",
+      "type": "leather",
+      "description": [
+        "**Essence Cost**: 1",
+        "Obviously, monster hide can take a variety of forms, and is a catch-all term for any leather derived from an animal with a mundane hide tougher than a cow. The power of the Maelstrom to twist creatures into more vicious forms, along with the natural evolutionary pressure of the wilderness has lead to a wide range of creatures with such hides."
+      ],
+      "usages": [{
+        "name": "Armor",
+        "entries": [
+          "**Artisan**: +1 Bonus to AC",
+          "**Masterwork**: +2 Bonus to AC"
+        ]
+      }]
+    },
+    "young dragon scale": {
+      "name": "Dragon-Scale (Young)",
+      "rarity": "Rare",
+      "type": "leather (Substitutes Metal)",
+      "description": [
+        "**Essence Cost**: 3",
+        "This scaly hide varies widely depending upon the color and age of the dragon they come from. The scales attached to the leather are incredibly tough but remarkably light. With proper techniques, these scales can either be fused against a metallic base for heavier armors, or treated to increase their flexibility for lighter armors."
+      ],
+      "usages": [{
+        "name": "Natural Properties",
+        "entries": [
+          "**Normal**: **Rustproof**; **Lightweight**."
+        ]
+      }, {
+        "name": "Armor",
+        "entries": [
+          "**Artisan**: +1 Bonus to AC",
+          "**Masterwork**: +2 Bonus to AC"
+        ]
+      }]
+    },
+    "adult dragon scale": {
+      "name": "Dragon-Scale (Adult)",
+      "rarity": "Rare",
+      "type": "leather (Substitutes Metal)",
+      "description": [
+        "**Essence Cost**: 3",
+        "This scaly hide varies widely depending upon the color and age of the dragon they come from. The scales attached to the leather are incredibly tough but remarkably light. With proper techniques, these scales can either be fused against a metallic base for heavier armors, or treated to increase their flexibility for lighter armors."
+      ],
+      "usages": [{
+        "name": "Natural Properties",
+        "entries": [
+          "**Normal**: **Rustproof**; **Lightweight**."
+        ]
+      }, {
+        "name": "Armor",
+        "entries": [
+          "**Normal**: +1 Bonus to AC",
+          "**Artisan**: +2 Bonus to AC",
+          "**Masterwork**: Resistance, based on dragon type."
+        ]
+      }]
+    },
+    "ancient dragon scale": {
+      "name": "Dragon-Scale (Ancient)",
+      "rarity": "Rare",
+      "type": "leather (Substitutes Metal)",
+      "description": [
+        "**Essence Cost**: 3",
+        "This scaly hide varies widely depending upon the color and age of the dragon they come from. The scales attached to the leather are incredibly tough but remarkably light. With proper techniques, these scales can either be fused against a metallic base for heavier armors, or treated to increase their flexibility for lighter armors."
+      ],
+      "usages": [{
+        "name": "Natural Properties",
+        "entries": [
+          "**Normal**: **Rustproof**; **Lightweight**."
+        ]
+      }, {
+        "name": "Armor",
+        "entries": [
+          "**Normal**: +1 Bonus to AC",
+          "**Artisan**: +2 Bonus to AC",
+          "**Masterwork**: +3 Bonus to AC; Resistance, based on dragon type."
+        ]
+      }]
+    },
+    "troll boar hide": {
+      "name": "Troll Boar Hide",
+      "rarity": "Uncommon",
+      "type": "leather",
+      "description": [
+        "**Essence Cost**: 1",
+        "Troll boar hide, unlike other common monster hides, seems to constantly regrow itself once treated with essence. This makes it particularly useful for those with a tendency to rip their armor."
+      ],
+      "usages": [{
+        "name": "Natural Properties",
+        "entries": [
+          "**Normal**: **Regrowing**"
+        ]
+      }, {
+        "name": "Armor",
+        "entries": [
+          "**Artisan**: +1 Bonus to AC",
+          "**Masterwork**: +2 Bonus to AC"
+        ]
+      }]
+    },
+    "winter wolf hide": {
+      "name": "Winter Wolf Hide",
+      "rarity": "Uncommon",
+      "type": "leather",
+      "description": [
+        "**Essence Cost**: 1"
+      ],
+      "usages": [{
+        "name": "Natural Properties",
+        "entries": [
+          "**Normal**: You have advantage on saving throws against extreme cold weather effects."
+        ]
+      }, {
+        "name": "Armor",
+        "entries": [
+          "**Artisan**: +1 Bonus to AC; While wearing this armor, other creatures have disadvantage on perception check to spot you while you in snowy terrain.",
+          "**Masterwork**: While wearing this item, a creature can not gain advantage on attacks against you from having an ally within 5 feet of you."
+        ]
+      }]
+    },
+    "plains worm carapace": {
+      "name": "Plains Worm Carapace",
+      "rarity": "Rare",
+      "type": "leather (Substitutes Metal)",
+      "description": [
+        "**Essence Cost**: 3",
+        "This thick leather is made from the outer shell of the giant burrowing worms living in the plains surrounding the Martyr’s Sphincter. As a result, it consists of curved, organically shaped plates of lamellate hide whose colors range from yellow sand to bronze brown, all with a faint golden patina that gleams in sunlight."
+      ],
+      "usages": [{
+        "name": "Natural Properties",
+        "entries": ["**Normal**: **Unbreakable**."]
+      }, {
+        "name": "Armor",
+        "entries": [
+          "**Artisan**: +1 Bonus to AC.",
+          "**Masterwork**: +2 Bonus to AC; Acid Resistance."
+        ]
+      }, {
+        "name": "Shields",
+        "entries": [
+          "**Artisan**: Acid **Cover**.",
+          "**Masterwork**: +1 Bonus to AC."
+        ]
+      }]
+    },
+    "yeti hide": {
+      "name": "Yeti Hide",
+      "rarity": "Uncommon",
+      "type": "leather",
+      "description": ["**Essence Cost**: 1"],
+      "usages": [{
+        "name": "Natural Properties",
+        "entries": ["**Normal**: You have advantage on saving throws against extreme cold weather effects."]
+      }, {
+        "name": "Armor",
+        "entries": [
+          "**Artisan**: +1 Bonus to AC.",
+          "**Masterwork**: Cold Resistance."
+        ]
+      }]
+    },
+    "chelicerae chitin": {
+      "name": "Chelicerae Chitin",
+      "rarity": "Rare",
+      "type": "leather (Substitutes Metal)",
+      "description": [
+        "**Essence Cost**: 3",
+        "The chitin from these Stormtwisted arcane spiders is rigid but lightweight like that from common insectoids, but has the potential, when worked by a skilled crafter and imbued with Essence, to harness some of the arcane potential of these horrific creatures."
+      ],
+      "usages": [{
+        "name": "Natural Properties",
+        "entries": [
+          "**Normal**: **Rustproof**; **Lightweight**; -1 penalty to AC, attack and damage rolls.",
+          "**Artisan**: Removes the -1 penalty."
+        ]
+      }, {
+        "name": "Weapons",
+        "entries": [
+          "**Artisan**: **Spell Eating** 1.",
+          "**Masterwork**: +1 bonus to attack and damage rolls; **Spell Eating** 3."
+        ]
+      }, {
+        "name": "Armor",
+        "entries": [
+          "**Artisan**: **Spell Absorption** 1.",
+          "**Masterwork**: +1 bonus to AC; **Spell Absorption** 3."
+        ]
+      }, {
+        "name": "Shields",
+        "entries": [
+          "**Artisan**: **Magic Resistance** 1.",
+          "**Masterwork**: +1 bonus to AC; **Magic Resistance** 3."
+        ]
+      }, {
+        "name": "Arcane Focus, Holy Symbol, Druidic Focus.",
+        "entries": [
+          "**Normal**: **Arcane Rebuke** 1.",
+          "**Artisan**: **Arcane Rebuke** 3.",
+          "**Masterwork**: +1 bonus to AC; **Arcane Rebuke** 5."
+        ]
+      }]
+    },
+    "adamantine": {
+      "name": "Adamantine",
+      "rarity": "Rare",
+      "type": "metal",
+      "description": [
+        "**Essence Cost**: 3",
+        "This alloy made from Adamantium, which is originally found as a hunk of dark, almost black, form which makes mining it that much harder. When forged, it takes on a very deep burnt orange hue , and is incredibly resilient and holds an edge better than any other metal."
+      ],
+      "usages": [{
+        "name": "Natural Properties",
+        "entries": ["**Normal**: **Unbreakable**."]
+      }, {
+        "name": "Armor",
+        "entries": [
+          "**Normal**: While wearing this armor, any critical hit against you becomes a normal hit.",
+          "**Artisan**: +1 Bonus to AC.",
+          "**Masterwork**: Any nonmagical crafted weapon that strikes you while wearing this armor splinters or cracks. After dealing damage it takes a permanent and cumulative -1 penalty to damage."
+        ]
+      }, {
+        "name": "Shields",
+        "entries": [
+          "**Artisan**: On a successful shove attack any nonmagical crafted armor being worn by the creature is damaged and takes a permanent and cumulative -1 penalty to AC to a minimum of 10. This does not affect any AC granted from Dexterity or other sources.",
+          "**Masterwork**: +1 Bonus to AC."
+        ]
+      }, {
+        "name": "Weapons",
+        "entries": [
+          "**Normal**: Construct **Slaying** 1; Whenever they hit an object, the hit is a critical hit. Additionally, whenever you successfully disarm a weapon, the weapon’s quality is lowered by 1 tier. If the item was already of low quality it is considered completely sundered and must be remade.",
+          "**Artisan**: Construct **Slaying** 2; +1 Bonus to attack and damage rolls.",
+          "**Masterwork**: Construct **Slaying** 3; +2 Bonus to attack and damage rolls."
+        ]
+      }, {
+        "name": "Ammunition",
+        "entries": [
+          "**Normal**: Construct **Slaying** 1; Whenever they hit an object, the hit is a critical hit. Additionally, whenever you successfully disarm a weapon, the weapon’s quality is lowered by 1 tier. If the item was already of low quality it is considered completely sundered and must be remade.",
+          "**Artisan**: Construct **Slaying** 2.",
+          "**Masterwork**: Construct **Slaying** 3."
+        ]
+      }]
+    },
+    "cold iron": {
+      "name": "Cold Iron",
+      "rarity": "Uncommon",
+      "type": "metal",
+      "description": [
+        "**Essence Cost**: 1",
+        "This darker looking iron seems to emanate an aura of shadow while it’s in the light. It’s named as such due to being forged at far lower temperatures, else it’s unique properties be lost. It’s dark energies sap the brightness from fey creatures, harming them substantially more."
+      ],
+      "usages": [{
+        "name": "Armor",
+        "entries": [
+          "**Normal**: Fey **Deterring**.",
+          "**Artisan**: +1 Bonus to AC.",
+          "**Masterwork**: +2 Bonus to AC."
+        ]
+      }, {
+        "name": "Foci",
+        "entries": [
+          "**Artisan**: Enchantment **Affinity** 1.",
+          "**Masterwork**: Enchantment **Affinity** 3."
+        ]
+      }, {
+        "name": "Jewelry",
+        "entries": [
+          "**Normal**: Fey **Deterring**.",
+          "**Artisan**: Fey **Protection**.",
+          "**Masterwork**: **Statement**."
+        ]
+      }, {
+        "name": "Shields",
+        "entries": [
+          "**Normal**: Fey **Deterring**.",
+          "**Artisan**: Cold **Cover**.",
+          "**Masterwork**: +1 Bonus to AC."
+        ]
+      }, {
+        "name": "Weapons",
+        "entries": [
+          "**Normal**: Fey **Slaying** 1.",
+          "**Artisan**: Fey **Slaying** 2; +1 bonus to attack and damage rolls.",
+          "**Masterwork**: Fey **Slaying** 3; +2 bonus to attack and damage rolls."
+        ]
+      }, {
+        "name": "Ammunition",
+        "entries": [
+          "**Normal**: Fey **Slaying** 1.",
+          "**Artisan**: Fey **Slaying** 2.",
+          "**Masterwork**: Fey **Slaying** 3."
+        ]
+      }]
+    },
+    "machalite": {
+      "name": "Machalite",
+      "rarity": "Uncommon",
+      "type": "metal",
+      "description": [
+        "**Essence Cost**: 1",
+        "This metal takes its original form as an agate-like rock, with a mix of green and blue crystals interspersed through the ingot. When worked in the forge, the crystals melt and bond with the unassuming binding metal. When properly smelted, the metal has a striped appearance, with green and blue veins mixing through the otherwise-dull-silvery metal."
+      ],
+      "usages": [{
+        "name": "Armor",
+        "entries": [
+          "**Normal**: Monstrosity **Deterring**.",
+          "**Artisan**: +1 Bonus to AC.",
+          "**Masterwork**: +2 Bonus to AC."
+        ]
+      }, {
+        "name": "Foci",
+        "entries": [
+          "**Artisan**: Transmutation **Affinity** 1.",
+          "**Masterwork**: Transmutation **Affinity** 3."
+        ]
+      }, {
+        "name": "Jewelry",
+        "entries": [
+          "**Normal**: Monstrosity **Deterring**.",
+          "**Artisan**: Monstrosity **Protection**.",
+          "**Masterwork**: **Statement**."
+        ]
+      }, {
+        "name": "Shields",
+        "entries": [
+          "**Normal**: Monstrosity **Deterring**.",
+          "**Artisan**: Acid **Cover**.",
+          "**Masterwork**: +1 Bonus to AC."
+        ]
+      }, {
+        "name": "Weapons",
+        "entries": [
+          "**Normal**: Monstrosity **Slaying** 1.",
+          "**Artisan**: Monstrosity **Slaying** 2; +1 bonus to attack and damage rolls.",
+          "**Masterwork**: Monstrosity **Slaying** 3; +2 bonus to attack and damage rolls."
+        ]
+      }, {
+        "name": "Ammunition",
+        "entries": [
+          "**Normal**: Monstrosity **Slaying** 1.",
+          "**Artisan**: Monstrosity **Slaying** 2.",
+          "**Masterwork**: Monstrosity **Slaying** 3."
+        ]
+      }]
+    },
+    "mithril": {
+      "name": "Mithril",
+      "rarity": "Rare",
+      "type": "metal",
+      "description": [
+        "**Essence Cost**: 3",
+        "Bright silver in color, a casual observation could have this easily mistaken for simple silver. However, the iridescent sheen on it informs a trained miner that the metal is actually the flexible and durable metal Mithril. When formed, it can be given a high-sheen, mirror-like polish, and is incredibly light."
+      ],
+      "usages": [{
+        "name": "Natural Properties",
+        "entries": [
+          "**Normal**: **Unbreakable**; **Lightweight**; **Muffled**."
+        ]
+      }, {
+        "name": "Armor",
+        "entries": [
+          "**Artisan**: **Flexible** 1",
+          "**Masterwork**: **Flexible** 2"
+        ]
+      }, {
+        "name": "Shields",
+        "entries": [
+          "**Normal**: **Compact**.",
+          "**Artisan**: **Ease** 1.",
+          "**Masterwork**: +1 Bonus to AC; **Ease** 2."
+        ]
+      }, {
+        "name": "Weapons",
+        "entries": [
+          "**Artisan**: **Compact**; +1 bonus to attack and damage rolls.",
+          "**Masterwork**: **Airy**; +2 bonus to attack and damage rolls."
+        ]
+      }, {
+        "name": "Ammunition",
+        "entries": [
+          "**Artisan**: **Delivery**.",
+          "**Artisan**: **Soaring** 10.",
+          "**Masterwork**: **Soaring** 30."
+        ]
+      }]
+    },
+    "orichalcum": {
+      "name": "Orichalcum",
+      "rarity": "Rare",
+      "type": "metal",
+      "description": ["**Essence Cost**: 3"],
+      "usages": [{
+        "name": "Natural Properties",
+        "entries": [
+          "**Normal**: **Unbreakable**."
+        ]
+      }, {
+        "name": "Armor, Shields",
+        "entries": [
+          "**Normal**: You can not cast spells while wearing this armor.",
+          "**Artisan**: While wearing this armor all spell effects on you have their duration reduced by half, and you have advantage on saving throws to end any spell effects on yourself. This includes helpful spells.",
+          "**Masterwork**: You can not be targeted by spells of level 3 or lower, including helpful spells. You can still be affected by spells that include you as a target, such as fireball."
+        ]
+      }, {
+        "name": "Weapons",
+        "entries": [
+          "**Artisan**: +1 bonus to attack and damage rolls; When you damage a creature that is concentrating on a spell with this item, that creature has disadvantage on the saving throw it makes to maintain its concentration.",
+          "**Masterwork**: +2 bonus to attack and damage rolls; Attacks with this weapon ignore any AC granted by spells."
+        ]
+      }, {
+        "name": "Ammunition",
+        "entries": [
+          "**Normal**: **Resilient**.",
+          "**Artisan**: When you damage a creature that is concentrating on a spell with this item, that creature has disadvantage on the saving throw it makes to maintain its concentration.",
+          "**Masterwork**: Attacks with this weapon ignore any AC granted by spells."
+        ]
+      }]
+    },
+    "spectrite": {
+      "name": "Spectrite",
+      "rarity": "Uncommon",
+      "type": "metal",
+      "description": [
+        "**Essence Cost**: 1",
+        "This strange metal appears as a dull green, and largly translucent when mined, and when fully processed, produces a eerie green, highly transparent material. Despite it’s ghostly appearance it remains solid, however, and it appears to viscerally cut through the necromantic energies that animate undead."
+      ],
+      "usages": [{
+        "name": "Armor",
+        "entries": [
+          "**Normal**: Undead **Deterring**.",
+          "**Artisan**: +1 Bonus to AC.",
+          "**Masterwork**: +2 Bonus to AC."
+        ]
+      }, {
+        "name": "Foci",
+        "entries": [
+          "**Artisan**: Necromancy **Affinity** 1.",
+          "**Masterwork**: Necromancy **Affinity** 3."
+        ]
+      }, {
+        "name": "Jewelry",
+        "entries": [
+          "**Normal**: Undead **Deterring**.",
+          "**Artisan**: Undead **Protection**.",
+          "**Masterwork**: **Statement**."
+        ]
+      }, {
+        "name": "Shields",
+        "entries": [
+          "**Normal**: Undead **Deterring**.",
+          "**Artisan**: Poison **Cover**.",
+          "**Masterwork**: +1 Bonus to AC."
+        ]
+      }, {
+        "name": "Weapons",
+        "entries": [
+          "**Normal**: Undead **Slaying** 1.",
+          "**Artisan**: Undead **Slaying** 2; +1 bonus to attack and damage rolls.",
+          "**Masterwork**: Undead **Slaying** 3; +2 bonus to attack and damage rolls."
+        ]
+      }, {
+        "name": "Ammunition",
+        "entries": [
+          "**Normal**: Undead **Slaying** 1.",
+          "**Artisan**: Undead **Slaying** 2.",
+          "**Masterwork**: Undead **Slaying** 3."
+        ]
+      }]
+    },
+    "hafsinite": {
+      "name": "Hafsinite",
+      "rarity": "Rare",
+      "type": "gem (substitutes metal)",
+      "description": ["**Essence Cost**: 3"],
+      "usages": [{
+        "name": "Natural Properties",
+        "entries": [
+          "**Normal**: **Unbreakable**."
+        ]
+      }, {
+        "name": "Armor",
+        "entries": [
+          "**Normal**: Fiend **Deterring**.",
+          "**Artisan**: **Hale**. 1",
+          "**Masterwork**: **Hale**. 2"
+        ]
+      }, {
+        "name": "Foci",
+        "entries": [
+          "**Artisan**: Radiant **Empowering** 1",
+          "**Masterwork**: Radiant **Empowering** 3."
+        ]
+      }, {
+        "name": "Shield",
+        "entries": [
+          "**Normal**: Fiend **Deterring**.",
+          "**Artisan**: Fire **Cover**.",
+          "**Masterwork**: +1 Bonus to AC."
+        ]
+      }, {
+        "name": "Weapons",
+        "entries": [
+          "**Normal**: Fiend **Slaying**. 1",
+          "**Artisan**: Fiend **Slaying** 2; +1 bonus to attack and damage rolls.",
+          "**Masterwork**: Fiend **Slaying** 3; +2 bonus to attack and damage rolls."
+        ]
+      }]
+    },
+    "ancient coral": {
+      "name": "Ancient Coral",
+      "rarity": "Rare",
+      "type": "wood",
+      "description": [
+        "**Essence Cost**: 3",
+        "This ivory white coral weighs next to nothing and floats on the surface of the dangerous waters it is found in. Incredibly porous, even the air around it seems to be absorbed."
+      ],
+      "usages": [{
+        "name": "Foci",
+        "entries": [
+          "**Artisan**: Lightning **Empowering** 1.",
+          "**Masterwork**: Lightning **Empowering** 2."
+        ]
+      }, {
+        "name": "Jewelry",
+        "entries": [
+          "**Normal**: **Respiring** 1.",
+          "**Artisan**: **Respiring** 10.",
+          "**Masterwork**: **Respiring** 30."
+        ]
+      }]
+    },
+    "ironwood": {
+      "name": "Ironwood",
+      "rarity": "Rare",
+      "type": "wood",
+      "description": [
+        "**Essence Cost**: 3",
+        "The mightiest trees the world has ever seen, Ironwood pines can reach 30 feet across at their base, and over 300 high. Its flesh is so tough that woodsmen opt for drills and picks over saws. When properly worked and treated Iron is a near perfect insulator against even intense flames."
+      ],
+      "usages": [{
+        "name": "Natural Properties",
+        "entries": [
+          "**Normal**: **Unbreakable**; Ironwood items gain the benefits of both wooden and metal implements, and only suffer from downsides that affect both material types. For example, they are non-flammable despite being made of wood, and are immune to rust despite acting similar to a metal."
+        ]
+      }, {
+        "name": "Armor",
+        "entries": [
+          "**Artisan**: +1 Bonus to AC.",
+          "**Masterwork**: +2 Bonus to AC; Fire Resistance."
+        ]
+      }, {
+        "name": "Foci",
+        "entries": [
+          "**Artisan**: Abjuration **Affinity** 1.",
+          "**Masterwork**: Abjuration **Affinity** 3."
+        ]
+      }, {
+        "name": "Shields",
+        "entries": [
+          "**Artisan**: Fire **Cover**.",
+          "**Masterwork**: +1 Bonus to AC."
+        ]
+      }, {
+        "name": "Weapons",
+        "entries": [
+          "**Artisan**: +1 bonus to attack and damage rolls.",
+          "**Masterwork**: **Shoving**; +2 bonus to attack and damage rolls."
+        ]
+      }, {
+        "name": "Ammunition",
+        "entries": [
+          "**Normal**: **Resilient**",
+          "**Artisan**: **Pushing** 13.",
+          "**Masterwork**: **Pushing** 18."
+        ]
+      }]
+    },
+    "livingwood": {
+      "name": "Livingwood",
+      "rarity": "Rare",
+      "type": "wood (Substitutes Cloth, Leather)",
+      "description": [
+        "**Essence Cost**: 3",
+        "Tree’s charged with primordial nature magic when cut down produce this unusual wood. The magic they are charged with allows them to flourish without connection to the ground, substituting the nutrients the wood would normally need, and as such it continues to grow and prosper long after being cut down."
+      ],
+      "usages": [{
+        "name": "Natural Properties",
+        "entries": [
+          "**Normal**: **Regrowing**."
+        ]
+      }, {
+        "name": "Armor",
+        "entries": [
+          "**Artisan**: +1 Bonus to AC; **Invigorating** 3.",
+          "**Masterwork**: +2 Bonus to AC; **Invigorating** 5."
+        ]
+      }, {
+        "name": "Clothing",
+        "entries": [
+          "**Artisan**: **Invigorating** 3.",
+          "**Masterwork**: **Invigorating** 5."
+        ]
+      }, {
+        "name": "Foci",
+        "entries": [
+          "**Artisan**: Conjuration **Affinity** 1.",
+          "**Masterwork**: Conjuration **Affinity** 3."
+        ]
+      }, {
+        "name": "Shields",
+        "entries": [
+          "**Artisan**: **Item Storing** 1.",
+          "**Masterwork**: +1 Bonus to AC; **Item Storing** 3."
+        ]
+      }, {
+        "name": "Weapons",
+        "entries": [
+          "**Artisan**: +1 bonus to attack and damage rolls; **Compact**.",
+          "**Masterwork**: +2 bonus to attack and damage rolls; **Grasping**."
+        ]
+      }, {
+        "name": "Ammunition",
+        "entries": [
+          "**Normal**: **Tangling** 13.",
+          "**Artisan**: **Tangling** 15.",
+          "**Masterwork**: **Tangling** 18."
+        ]
+      }]
+    },
+    "mourningwood": {
+      "name": "Mourningwood",
+      "rarity": "Uncommon",
+      "type": "wood",
+      "description": [
+        "**Essence Cost**: 1",
+        "This slender, brittle, pale wood that comes from trees that can often be found growing near sites where a mass death had occurred. The wood almost seems to appreciate being worked, as the more it is handled the healthier it seems to become. The wood darkens to a rich dark brown, and becomes incredibly durable and lightweight overtime."
+      ],
+      "usages": [{
+        "name": "Natural Properties",
+        "entries": [
+          "**Normal**: **Unbreakable**."
+        ]
+      }, {
+        "name": "Shield",
+        "entries": [
+          "**Artisan**: Necrotic **Cover**."
+        ]
+      }, {
+        "name": "Foci",
+        "entries": [
+          "**Artisan**: **Spell Stretching** 5.",
+          "**Masterwork**: **Spell Stretching** 15."
+        ]
+      }, {
+        "name": "Weapons",
+        "entries": [
+          "**Normal**: **Soaring** 5.",
+          "**Artisan**: +1 bonus to attack and damage rolls; **Soaring** 15.",
+          "**Masterwork**: +2 bonus to attack and damage rolls; **Soaring** 30."
+        ]
+      }]
+    },
+    "witherwood": {
+      "name": "Witherwood",
+      "rarity": "Uncommon",
+      "type": "wood",
+      "description": [
+        "**Essence Cost**: 1",
+        "A tainted black wood harvested from gnarled trees that were the product of a conflict between two celestial beings. The negative energies contained within bolster necromantic powers, or when forged into weapons, can sap the strength of their victims."
+      ],
+      "usages": [{
+        "name": "Natural Properties",
+        "entries": [
+          "**Normal**: **Unbreakable**."
+        ]
+      }, {
+        "name": "Foci",
+        "entries": [
+          "**Artisan**: Necrotic **Empowering** 1.",
+          "**Masterwork**: Necrotic **Empowering** 2."
+        ]
+      }, {
+        "name": "Weapons",
+        "entries": [
+          "**Normal**: Strength **Withering** 1.",
+          "**Artisan**: Strength **Draining** 1.",
+          "**Masterwork**: Strength **Draining** 2."
+        ]
+      }]
+    }
+  },
+  "properties": {
+    "acidproof": {
+      "name": "Acidproof",
+      "description": [
+        "An item with the Acidproof property is immune to the effects of corrosion from acid such as a Gray Ooze’s Corrode Metal ability."
+      ],
+      "usages": [{
+        "name": "Used by the following materials:",
+        "entries": ["Steel"]
+      }]
+    },
+    "affinity": {
+      "name": "Affinity",
+      "description": [
+        "After successfully casting a spell of the specified school of magic using this focus you may regain that spell slot so long as the spell slot is no higher than the Affinity value of the focus.",
+        "You cannot regain a spell slot this way again until you complete a long rest."
+      ],
+      "usages": [{
+        "name": "Used by the following materials:",
+        "entries": [
+          "Bone (Divination)",
+          "Cold Iron (Enchantment)",
+          "Criolithe (Evocation)",
+          "Ironwood (Abjuration)",
+          "Labradorite (Illusion)",
+          "Livingwood (Conjuration)",
+          "Machalite (Transmutation)",
+          "Spectrite (Necromancy)"
+        ]
+      }]
+    },
+    "airy": {
+      "name": "Airy",
+      "description": [
+        "Airy weapon ignore the penalties from the Heavy property.",
+        "Weapons that do not have the Heavy property instead gain the Light property.",
+        "Weapons that already have the Light property additionally count as monk weapons."
+      ],
+      "usages": [{
+        "name": "Used by the following materials:",
+        "entries": ["Mithril"]
+      }]
+    },
+    "blinking": {
+      "name": "Blinking",
+      "description": [
+        "Whenever you roll a d20 as part of the Blink spell you may add or subtract this items Blinking value from the results of this roll."
+      ],
+      "usages": [{
+        "name": "Used by the following materials:",
+        "entries": ["Phase Spider Silk"]
+      }]
+    },
+    "boundless spirit": {
+      "name": "Boundless Spirit",
+      "description": [
+        "When making death saving throws you regain 1 hit point on a roll of a 19 or 20.",
+        "Additionally when you regain consciousness this way you gain Xd4 temporary hit points where X is the items Boundless Spirit value.",
+        "Once a creature regains consciousness this way, it cannot do so again until it completes a long rest."
+      ],
+      "usages": [{
+        "name": "Used by the following materials:",
+        "entries": ["Dawn Star"]
+      }]
+    },
+    "bulky": {
+      "name": "Bulky",
+      "description": [
+        "If the wearer has a Strength score lower than 15, their speed is reduced by 10 feet."
+      ],
+      "usages": [{
+        "name": "Used by the following materials:",
+        "entries": ["Criolithe"]
+      }]
+    },
+    "changing seasons": {
+      "name": "Changing Seasons",
+      "description": [
+        "Items with the Changing Seasons property shift in color and style to match the current season.",
+        "If you have the Feyborn Seasons legacy trait, you may change the item’s season in the same way you would change yours. Otherwise, the item’s current season mirrors Otera’s current season.",
+        "You become less susceptible to a certain type of damage depending on the current season: winter (cold), spring (radiant), summer (fire), or autumn (necrotic). Based on the items’s current season, reduce the damage you take of its associated type by the armor’s Changing Seasons value every time you take damage of that type."
+      ],
+      "usages": [{
+        "name": "Used by the following materials:",
+        "entries": ["Dreamweave"]
+      }]
+    },
+    "compact": {
+      "name": "Compact",
+      "description": [
+        "The weight of a Compact item is reduced by half and it takes up 1 less inventory slot to a minimum of 1 slot."
+      ],
+      "usages": [{
+        "name": "Used by the following materials:",
+        "entries": [
+          "Livingwood",
+          "Mithril",
+          "Omniate"
+        ]
+      }]
+    },
+    "conduit": {
+      "name": "Conduit",
+      "description": [
+        "An item with the Conduit property has a maximum of X charges, where X is its Conduit value.",
+        "Whenever you damage an enemy with a spell, you deal extra damage equal to the current number of charges this item has.",
+        "When you cast a spell of 1st level or higher, you may expend all charges to add a bonus to the spell’s attack roll or save DC equal to the number of charges spent.",
+        "If you do not use this feature when you cast a spell of 1st level or higher, this item gains 1 charge. All charges are lost when you take a long rest.",
+        "This bonus does not stack with similar effects that increase spell attack or DC, such as a Wand of the Warmage or Rod of the Pact Keeper."
+      ],
+      "usages": [{
+        "name": "Used by the following materials:",
+        "entries": [
+          "Arcanaweave",
+          "Criolithe"
+        ]
+      }]
+    },
+    "cover": {
+      "name": "Cover",
+      "description": [
+        "While wielding or having this item equipped, you have advantage on Dexterity saving throws against spells and effects that deal damage of items Cover type."
+      ],
+      "usages": [{
+        "name": "Used by the following materials:",
+        "entries": [
+          "Machalite (Acid)",
+          "Spectrite (Poison)",
+          "Ironwood (Fire)",
+          "Mourningwood (Necrotic)"
+        ]
+      }]
+    },
+    "delivery": {
+      "name": "Delivery",
+      "description": [
+        "This ammunition is capable of holding and delivering a substance such as alchemist’s fire.",
+        "You must spend 1 minute filling the ammunition with a consumable item that would normally require an action to be thrown. Once filled, the effects of the stored item are triggered on a successful ranged attack roll.",
+        "This item can not be recovered on a successful hit, however if successfully recovered on a missed attack, the substance is intact."
+      ],
+      "usages": [{
+        "name": "Used by the following materials:",
+        "entries": ["Mithril"]
+      }]
+    },
+    "deterring": {
+      "name": "Deterring",
+      "description": [
+        "Deterring items gives an added layer of protection against a specific creature type.",
+        "While wearing a Deterring item, a creature of that type within 5 feet of you who targets you with a attack or a harmful spell must first make a DC 12 Wisdom saving throw.",
+        "On a failed save, the creature must choose a new target or lose the attack or spell. This does not protect you from area effects, such as the explosion of a fireball.",
+        "If you make an attack or casts a spell that affects an enemy creature, this property is lost until the end of combat."
+      ],
+      "usages": [{
+        "name": "Used by the following materials:",
+        "entries": [
+          "Cold Iron (Fey)",
+          "Machalite (Monstrosity)",
+          "Spectrite (Undead)"
+        ]
+      }]
+    },
+    "draining": {
+      "name": "Draining",
+      "description": [
+        "This item drains a specific ability score from your enemies and infuses you with it.",
+        "When you hit a creature with this weapon and roll a 20 on the attack roll, the target has it’s matching ability score reduced by the items Draining value for 10 minutes.",
+        "The target dies if this reduces an ability score to 0. Additionally, your strength is increased by the same amount for 10 minutes or until you cease to wield this weapon.",
+        "A creature with immunity to necrotic damage is immune to this effect. Additionally creatures with Legendary Resistance can not have their ability scores by more then half."
+      ],
+      "usages": [{
+        "name": "Used by the following materials:",
+        "entries": ["Witherwood"]
+      }]
+    },
+    "ease": {
+      "name": "Ease",
+      "description": [
+        "The fine build and light material of these shields allow them to be moved rapidly.",
+        "When a creature within 5 feet is targeted by an attack that you can see, you can use your reaction to help defend them, granting them the shields Ease value as a bonus to their AC against the attack."
+      ],
+      "usages": [{
+        "name": "Used by the following materials:",
+        "entries": [
+          "Mithril"
+        ]
+      }]
+    },
+    "empowering": {
+      "name": "Empowering",
+      "description": [
+        "When you cast a spell through this focus that immediately deals only damage of the items Empowering type and targets only a single creature, you can choose to reroll any damage dice that roll a number less then or equal to the items Empowering value. You must use these new roll, even if the new roll is less then equal to the original. You do not gain this effect on subsequent damage done with this spell after it’s immediate casting."
+      ],
+      "usages": [{
+        "name": "Used by the following materials:",
+        "entries": [
+          "Ancient Coral (Lightning)",
+          "True Ice (Cold)",
+          "Witherwood (Necrotic)"
+        ]
+      }]
+    },
+    "flexible": {
+      "name": "Flexible",
+      "description": [
+        "Armor with this ability allows you to benefit from higher dexterity while wearing the armor equal to the items Flexible value."
+      ],
+      "usages": [{
+        "name": "Used by the following materials:",
+        "entries": ["Mithril"]
+      }]
+    },
+    "grasping": {
+      "name": "Grasping",
+      "description": [
+        "As a bonus action you can cause a Grasping weapon to become vine like and lash out at a creature within 15 feet of you that you can see. When you do, make an attack roll against that creature with this item, the creature must succeed a Dexterity saving throw against your attack roll or be pulled 10 feet directly towards you. After you have made this attack the weapon reverts to it’s normal form. Each time you use this property the item takes a -1 to both Attack and Damage rolls."
+      ],
+      "usages": [{
+        "name": "Used by the following materials:",
+        "entries": [
+          "Livingwood",
+          "Omniate"
+        ]
+      }]
+    },
+    "honed": {
+      "name": "Honed",
+      "description": [
+        "Deals an additional X non-magical piercing damage."
+      ],
+      "usages": [{
+        "name": "Used by the following materials:",
+        "entries": ["Steel"]
+      }]
+    },
+    "invigorating": {
+      "name": "Invigorating",
+      "description": [
+        "When an ally uses a DM Inspiration point within 30 feet, you heal for an amount equal to the items Invigorating value."
+      ],
+      "usages": [{
+        "name": "Used by the following materials:",
+        "entries": [
+          "Livingwood",
+          "Omniate"
+        ]
+      }]
+    },
+    "item Storing": {
+      "description": [
+        "While wielding or having this item equipped you may increase the number of Belt slots your character has by this items Item Storing value. The items stored in these belt slots are only accessible when this item is wielded or while you have it equipped.",
+        "The back of this shield will grasp onto and hold items for you. This shield has the denoted number of inventory slots. While wielding this shield the items stored in these slots can be retrieved as if they were on your Belt."
+      ],
+      "usages": [{
+        "name": "Used by the following materials:",
+        "entries": ["Livingwood"]
+      }]
+    },
+    "lightweight": {
+      "name": "Lightweight",
+      "description": [
+        "If the item has a Strength requirement, the Lightweight version of the item doesn’t."
+      ],
+      "usages": [{
+        "name": "Used by the following materials:",
+        "entries": [
+          "Chitin",
+          "Dragon-Scale (Young)",
+          "Dragon-Scale (Adult)",
+          "Dragon-Scale (Ancient)",
+          "Mithril"
+        ]
+      }]
+    },
+    "muffled": {
+      "name": "Muffled",
+      "description": [
+        "If the item normally imposes disadvantage on Dexterity (Stealth) checks the Muffled version of the item doesn’t."
+      ],
+      "usages": [{
+        "name": "Used by the following materials:",
+        "entries": ["Mithril"]
+      }]
+    },
+    "protection": {
+      "name": "Protection",
+      "description": [
+        "While wielding or having this item equipped, you have advantage on saving throws against spells and effects from creatures that match this items Protection type."
+      ],
+      "usages": [{
+        "name": "Used by the following materials:",
+        "entries": [
+          "Cold Iron (Fey)",
+          "Machalite (Monstrosity)",
+          "Spectrite (Undead)"
+        ]
+      }]
+    },
+    "regrowing": {
+      "name": "Regrowing",
+      "description": [
+        "Items with the Regrowing property will completely repair themselves over a short rest, removing any negative modifiers."
+      ],
+      "usages": [{
+        "name": "Used by the following materials:",
+        "entries": [
+          "Livingwood",
+          "Omniate",
+          "Troll Boar Hide"
+        ]
+      }]
+    },
+    "respiring": {
+      "name": "Respiring",
+      "description": [
+        "Items with the Respiring property can be used as a filter of sorts underwater to breath normally for a number of a minutes equal to their Respiring value."
+      ],
+      "usages": [{
+        "name": "Used by the following materials:",
+        "entries": ["Ancient Coral"]
+      }]
+    },
+    "restful": {
+      "name": "Restful",
+      "description": [
+        "When you complete a long rest while wearing a Restful item, you regain an additional number of spent hit dice equal to this item’s Restful value (up to your maximum)."
+      ],
+      "usages": [{
+        "name": "Used by the following materials:",
+        "entries": ["Mooncloth"]
+      }]
+    },
+    "rustproof": {
+      "name": "Rustproof",
+      "description": [
+        "An item with the Rustproof property is immune to the effects of corrosion from acid such as a Rust Monster’s Rust Metal ability."
+      ],
+      "usages": [{
+        "name": "Used by the following materials:",
+        "entries": [
+          "Chitin",
+          "Bronze",
+          "Bone",
+          "Dragon-Scale (Young)",
+          "Dragon-Scale (Adult)",
+          "Dragon-Scale (Ancient)"
+        ]
+      }]
+    },
+    "pushing": {
+      "name": "Pushing",
+      "description": [
+        "A creature hit by the ammunition must succeed on a DC X Strength saving throw or be pushed back 5 feet."
+      ],
+      "usages": [{
+        "name": "Used by the following materials:",
+        "entries": ["Ironwood"]
+      }]
+    },
+    "resilient": {
+      "name": "Resilient",
+      "description": [
+        "You have advantage on checks to recover this ammunition."
+      ],
+      "usages": [{
+        "name": "Used by the following materials:",
+        "entries": ["Ironwood"]
+      }]
+    },
+    "retribution": {
+      "name": "Retribution",
+      "description": [
+        "While wielding this shield if a creature misses you with a melee attack by 2 or less, the creature suffers Xd4 damage of the listed type where X is the items Retribution value."
+      ],
+      "usages": [{
+        "name": "Used by the following materials:",
+        "entries": ["True Ice (Cold)"]
+      }]
+    },
+    "shoving": {
+      "name": "Shoving",
+      "description": [
+        "When you a hit a target with a attack using this weapon you may use your reaction to make a shove attack to push the same creature back 5 feet. Use the same ability score as your attack roll for the Athletics check for this shove attack."
+      ],
+      "usages": [{
+        "name": "Used by the following materials:",
+        "entries": ["Ironwood"]
+      }]
+    },
+    "slaying": {
+      "name": "Slaying",
+      "description": [
+        "When you hit a creature of the type listed in the Slaying property with this weapon, it takes an extra Xd6 damage of the weapon’s type where X is the weapons Slaying value. For the purpose of this weapon, \"dragon\" refers to any creature with the dragon type, including dragon turtles and wyverns.",
+        "*Example:* A sword with dragon slaying 3 would deal an additional 3d6 against a creature with the dragon type, including dragon turtles and wyverns."
+      ],
+      "usages": [{
+        "name": "Used by the following materials:",
+        "entries": [
+          "Adamantine (Construct)",
+          "Cold Iron (Fey)",
+          "Machalite (Monstrosity)",
+          "Spectrite (Undead)"
+        ]
+      }]
+    },
+    "soaring": {
+      "name": "Soaring",
+      "description": [
+        "Ranged attacks made with this ranged weapon add the denoted number to their normal range and long range."
+      ],
+      "usages": [{
+        "name": "Used by the following materials:",
+        "entries": [
+          "Mithril",
+          "Mourningwood"
+        ]
+      }]
+    },
+    "soothing": {
+      "name": "Soothing",
+      "description": [
+        "When you cast a spell through this focus that immediately does healing and targets only 1 creature, you can choose to reroll any healing dice that roll a number less then or equal to the items soothing value. You must use these new roll, even if the new roll is less then equal to the original. You do not gain this effect on subsequent healing done with this spell after it’s immediate casting."
+      ],
+      "usages": [{
+        "name": "Used by the following materials:",
+        "entries": ["Omniate"]
+      }]
+    },
+    "spell storing": {
+      "name": "Spell Storing",
+      "description": [
+        "This item stores spells cast into it, holding them until the person wearing or wielding this item uses them or until the next dawn. The item can store up to its Spell Storing value in levels worth of spells at a time.",
+        "Any creature can cast a spell into the item by touching it as the spell is cast. The spell has no effect, other than to be stored in the item. If the item can’t hold the spell, the spell is expended without effect. The level of the slot used to cast the spell determines how much space it uses.",
+        "While wearing or wielding this item, you can cast any spell stored in it. The spell uses the slot level, spell save DC, spell attack bonus, and spellcasting ability of the original caster, but is otherwise treated as if you cast the spell. The spell cast from the item is no longer stored in it, freeing up space."
+      ],
+      "usages": [{
+        "name": "Used by the following materials:",
+        "entries": ["Criolithe"]
+      }]
+    },
+    "spell stretching": {
+      "name": "Spell Stretching",
+      "description": [
+        "When you cast a spell through this focus, if that spell has a range of 5 feet or greater and targets only one creature, you may extend that spell’s range by a number of feet equal to the focus’ Amplify value."
+      ],
+      "usages": [{
+        "name": "Used by the following materials:",
+        "entries": ["Mourningwood"]
+      }]
+    },
+    "statement": {
+      "name": "Statement",
+      "description": [
+        "When crafting this piece choose one Charisma based skill. While wearing this item you have advantage on skill checks with the chosen skill."
+      ],
+      "usages": [{
+        "name": "Used by the following materials:",
+        "entries": [
+          "Cold Iron",
+          "Machalite",
+          "Spectrite"
+        ]
+      }]
+    },
+    "tangling": {
+      "name": "Tangling",
+      "description": [
+        "A creature with this ammunition takes no damage but instead must succeed on a Strength saving throw against your attack roll or be restrained for 1 minute. A creature restrained this way can use its action to make a DC X Strength check. On a success, it frees itself."
+      ],
+      "usages": [{
+        "name": "Used by the following materials:",
+        "entries": ["Livingwood"]
+      }]
+    },
+    "unbreakable": {
+      "name": "Unbreakable",
+      "description": [
+        "The item can not be broken, degraded or have negative modifiers applied to it under normal, non-magical, circumstances. Additionally the item counts as both **Rustproof** and **Acidproof**."
+      ],
+      "usages": [{
+        "name": "Used by the following materials:",
+        "entries": [
+          "Adamantine",
+          "Ironwood",
+          "Mithril",
+          "Mourningwood",
+          "Orichalcum",
+          "True Ice",
+          "Witherwood"
+        ]
+      }]
+    },
+    "withering": {
+      "name": "Withering",
+      "description": [
+        "While wielding or donning this item, the indicated ability score is reduced by the items withering value."
+      ],
+      "usages": [{
+        "name": "Used by the following materials:",
+        "entries": ["Witherwood"]
+      }]
+    },
+    "arcane rebuke": {
+      "name": "Arcane Rebuke",
+      "description": [
+        "Immediately after a creature hits you with a melee attack, you can use your reaction to deal 1d6 force damage to that creature. You may use this effect X times per long rest."
+      ],
+      "usages": [{
+        "name": "Used by the following materials:",
+        "entries": ["Chelicerae Chitin"]
+      }]
+    },
+    "magic resistance": {
+      "name": "Magic Resistance",
+      "description": [
+        "The first time you are targeted with a spell of X level or lower you have advantage on the saving throw."
+      ],
+      "usages": [{
+        "name": "Used by the following materials:",
+        "entries": ["Chelicerae Chitin"]
+      }]
+    },
+    "spell absorption": {
+      "name": "Spell Absorption",
+      "description": [
+        "The first time you successfully save against a spell of X level, you may replenish a spell slot of up to that level."
+      ],
+      "usages": [{
+        "name": "Used by the following materials:",
+        "entries": ["Chelicerae Chitin"]
+      }]
+    },
+    "spell eating": {
+      "name": "Spell Eating",
+      "description": [
+        "When a creature loses concentration on a spell due to damage from this weapon, they are unable to cast that spell again for X rounds.",
+        "Additionally, if the spell is of a level you can cast (or lower), you may use your reaction to immediately begin concentrating on that spell as if you had cast it. (It need not be on your class spell list.) A spell with a target of \"self\" is moved to you, otherwise the spell's original location or targets are maintained. You may only concentrate on a spell this way for X rounds."
+      ],
+      "usages": [{
+        "name": "Used by the following materials:",
+        "entries": ["Chelicerae Chitin"]
+      }]
+    },
+    "hale": {
+      "name": "Hale",
+      "description": [
+        "When targeted by a healing spell, you can choose to reroll any number of dice that roll a number less than or equal to the item's Hale value. Your rerolls affect only you and you must use the new results rolled."
+      ],
+      "usages": [{
+        "name": "Used by the following materials:",
+        "entries": ["Chelicerae Chitin"]
+      }]
+    }
+  }
+}
